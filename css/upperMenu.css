@@ -8,5 +8,12 @@
 }
 .homebutton {
   position: fixed;
+  top: 20px;
+  left: 20px;
+  float: left;
+}
+.album {
+  position: fixed;
+  top: 20px;
   float: left;
 }

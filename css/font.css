@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "cabin";
+  src: "../font/Cabin/Cabin.ttf" format("truetype");
+}
+.cabin {
+  font-family: "cabin";
+}
