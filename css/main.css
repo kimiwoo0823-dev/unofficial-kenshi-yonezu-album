@@ -1,0 +1,36 @@
+.mainlist {
+  position: relative;
+  width: 1500px;
+  margin: auto;
+  top: 150px;
+}
+.selectbase {
+  float: left;
+  width: 400px;
+  height: 500px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin: 49px;
+  transition: 0.25s;
+}
+.selectimage {
+  width: 80%;
+  margin: 40px 40px 10px 40px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+  border-radius: 10px;
+}
+.selectalbumtext {
+  font-family: "cabin";
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  color: black;
+}
+.selectbase:hover {
+  transform: scale(110%, 110%);
+}
+.physicalbase {
+  float: left;
+  width: 1500px;
+}
