@@ -1,6 +1,8 @@
 @font-face {
   font-family: "cabin";
-  src: "../font/Cabin/Cabin.ttf" format("truetype");
+  src: url("../font/Cabin/Cabin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 .cabin {
   font-family: "cabin";
