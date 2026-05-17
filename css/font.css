@@ -10,3 +10,9 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: meiryo;
+  src: url("../font/Meiryo/Meiryo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
