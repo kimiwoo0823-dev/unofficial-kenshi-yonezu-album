@@ -4,6 +4,9 @@
   font-weight: normal;
   font-style: normal;
 }
-.cabin {
-  font-family: "cabin";
+@font-face {
+  font-family: "S-core5";
+  src: url("../font/S-Core/SCDream5.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
