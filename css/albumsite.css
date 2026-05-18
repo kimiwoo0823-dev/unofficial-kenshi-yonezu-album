@@ -1,0 +1,73 @@
+.album {
+  width: 1500px;
+  height: 2000px;
+  position: relative;
+  top: 150px;
+}
+.albumvisual {
+  width: 600px;
+  height: 700px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  position: relative;
+  float: left;
+}
+.albumimage {
+  position: relative;
+  width: 80%;
+  height: calc(width);
+  margin: 60px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.albumtitle {
+  font-family: "cabin" "meiryo";
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  color: black;
+}
+.albumplaylist {
+  font-family: "cabin" "meiryo";
+  font-size: 20px;
+  position: relative;
+  color: black;
+  float: left;
+  width: 700px;
+  height: 700px;
+  position: relative;
+  left: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+}
+.albumtrack {
+  height: 640px;
+  overflow-y: scroll;
+  float: left;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+.albumtrack::-webkit-scrollbar {
+  display: none;
+}
+table {
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+td:first-child {
+  padding: 20px;
+  text-align: center;
+}
+td:nth-child(2) {
+  width: 530px;
+}
+td:last-child {
+  text-align: right;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
