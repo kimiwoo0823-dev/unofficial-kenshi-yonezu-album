@@ -1,0 +1,99 @@
+{
+  "diorama": {
+    "title": "diorama",
+    "image": "../image/album/diorama.png",
+    "number": "The 1st Album",
+    "musics": {
+      "machi": {
+        "title": "Machi",
+        "track": 1,
+        "time": "5:40"
+      },
+      "gogoyuureisen": {
+        "title": "Go Go Yuureisen",
+        "track": 2,
+        "time": "3:50"
+      },
+      "dagashiyashoubai": {
+        "title": "Dagashiyashoubai",
+        "track": 3,
+        "time": "4:34"
+      },
+      "caribou": {
+        "title": "caribou",
+        "track": 4,
+        "time": "4:15"
+      },
+      "amefurifujin": {
+        "title": "Amefuri Fujin",
+        "track": 5,
+        "time": "2:59"
+      },
+      "discoballoon": {
+        "title": "Disco Balloon",
+        "track": 6,
+        "time": "4:23"
+      },
+      "vivi": {
+        "title": "vivi",
+        "track": 7,
+        "time": "4:30"
+      },
+      "toypatriot": {
+        "title": "Toy Patriot",
+        "track": 8,
+        "time": "4:13"
+      },
+      "koitobyounetsu": {
+        "title": "Koi to Byounetsu",
+        "track": 9,
+        "time": "4:22"
+      },
+      "blacksheep": {
+        "title": "Black Sheep",
+        "track": 10,
+        "time": "5:09"
+      },
+      "hikarabitabushitotsu": {
+        "title": "Hikarabita Bus Hitotsu",
+        "track": 11,
+        "time": "5:08"
+      },
+      "kubinashikankodori": {
+        "title": "Kubinashi Kankodori",
+        "track": 12,
+        "time": "4:23"
+      },
+      "shinzouhouei": {
+        "title": "Shinzou Houei",
+        "track": 13,
+        "time": "4:04"
+      },
+      "shounhon": {
+        "title": "Shounhon",
+        "track": 14,
+        "time": "4:04"
+      }
+    }
+  },
+  "yankee": {
+    "title": "YANKEE",
+    "number": 2
+  },
+  "bremen": {
+    "title": "Bremen",
+    "number": 3
+  },
+  "bootleg": {
+    "title": "BOOTLEG",
+    "number": 4
+  },
+  "straysheep": {
+    "title": "STRAY SHEEP",
+    "number": 5
+  },
+  "lostcorner": {
+    "title": "LOST CORNER",
+    "number": 6
+  }
+}
