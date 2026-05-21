@@ -52,7 +52,7 @@
   width: 600px;
   height: 250px;
   overflow-y: scroll;
-  font-family: "cabin" "meiryo";
+  font-family: "cabin", "meiryo";
   font-size: 20px;
   top: 100px;
   left: -20px;
