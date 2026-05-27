@@ -3,7 +3,7 @@ fetch("/header.html") //헤더 파일 찾기
   .then((data) => {
     document.getElementById("header").innerHTML = data; //header id에 불러온 data값 추가
 
-    const path = location.pathname;
+    const path = location.pathname; //위치하는 주소의 이름을 path에 저장
 
     if (path.includes("/album/")) {
       //주소창에 /album/이 존재하면 상단 메뉴의 albummenu 클래스를 가진 부분에 nowposition(색 변환 강조) 클래스 추가

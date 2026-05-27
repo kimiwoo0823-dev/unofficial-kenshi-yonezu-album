@@ -1,61 +1,93 @@
-.albumlist {
-  position: relative;
+.album {
   width: 1500px;
-  margin: auto;
+  height: 2000px;
+  position: relative;
   top: 150px;
 }
-.albumbase {
-  position: relative;
-  background-color: white;
-  margin: 0px 150px 100px;
-  width: 1200px;
-  height: 400px;
+.albumvisual {
+  margin: 0px 40px;
+  width: 600px;
+  height: 700px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
-  transition-duration: 0.25s;
+  position: relative;
+  float: left;
 }
 .albumimage {
   position: relative;
-  width: calc(height);
-  height: 80%;
-  top: 50%;
-  left: 200px;
-  margin: 0px;
-  transform: translate(-50%, -50%);
+  width: 80%;
+  height: calc(width);
+  margin: 60px;
+  margin-bottom: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  float: left;
-}
-.albumbase:hover {
-  transform: scale(110%, 110%);
 }
 .albumtitle {
-  color: black;
   font-family: "cabin";
   font-size: 20px;
-  top: 20px;
-  left: 100px;
+  text-align: center;
+  position: relative;
+  color: black;
+}
+.albumplaylist {
+  font-family: "cabin", "meiryo";
+  color: black;
+  font-size: 20px;
   position: relative;
   float: left;
-}
-.albumdate {
-  color: black;
-  font-family: "cabin";
-  font-size: 20px;
-  top: 20px;
-  right: 40px;
+  width: 700px;
+  height: 700px;
   position: relative;
-  float: right;
+  left: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
 }
 .albumtrack {
-  color: black;
-  width: 600px;
-  height: 250px;
+  height: 640px;
   overflow-y: scroll;
-  font-family: "cabin", "meiryo";
-  font-size: 20px;
-  top: 100px;
-  left: -20px;
+  float: left;
+  position: relative;
+  top: 30px;
+  left: 30px;
+}
+.albumtrack::-webkit-scrollbar {
+  display: none;
+}
+table {
+  border-collapse: collapse;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.music {
+  float: left;
+  display: flex;
+  width: 640px;
+  height: 50px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.number {
+  width: 20px;
+  text-align: center;
   position: relative;
   float: left;
+  padding: 10px;
+}
+.title {
+  width: 510px;
+  position: relative;
+  float: left;
+  top: 15px;
+  padding: 10px;
+}
+.time {
+  width: 30px;
+  position: relative;
+  float: left;
+  padding: 10px 20px;
+}
+html::-webkit-scrollbar {
+  display: none;
 }
