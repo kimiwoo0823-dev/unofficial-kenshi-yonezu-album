@@ -1200,5 +1200,180 @@
       ]
     }
   ],
-  "digital": []
+  "digital": [
+    {
+      "id": "spiritsofthesea",
+      "jptitle": "海の幽霊",
+      "entitle": "Spirits of The Sea",
+      "image": ["/image/digital/Spirits of the Sea.png"],
+      "date": "2019.06.03",
+      "musics": [
+        {
+          "id": "spiritsofthesea",
+          "jptitle": "海の幽霊",
+          "entitle": "Spirits of The Sea",
+          "track": 1,
+          "time": "3:55"
+        }
+      ]
+    },
+    {
+      "id": "paprika",
+      "jptitle": "パプリカ",
+      "entitle": "Paprika",
+      "image": ["/image/digital/PAPRIKA.png"],
+      "date": "2020.02.03",
+      "musics": [
+        {
+          "id": "paprika",
+          "jptitle": "パプリカ",
+          "entitle": "Paprika",
+          "track": 1,
+          "time": "3:24"
+        }
+      ]
+    },
+    {
+      "id": "popsong",
+      "jptitle": "POP SONG",
+      "entitle": "POP SONG",
+      "image": ["/image/digital/POP SONG.png"],
+      "date": "2022.02.07",
+      "musics": [
+        {
+          "id": "popsong",
+          "jptitle": "POP SONG",
+          "entitle": "POP SONG",
+          "track": 1,
+          "time": "3:20"
+        }
+      ]
+    },
+    {
+      "id": "lady",
+      "jptitle": "LADY",
+      "entitle": "LADY",
+      "image": ["/image/digital/LADY.png"],
+      "date": "2023.03.21",
+      "musics": [
+        {
+          "id": "lady",
+          "jptitle": "LADY",
+          "entitle": "LADY",
+          "track": 1,
+          "time": "3:28"
+        }
+      ]
+    },
+    {
+      "id": "tsukiwomiteita",
+      "jptitle": "月を見ていた",
+      "entitle": "Tsuki Wo Miteita",
+      "image": ["/image/digital/Tsuki Wo Miteita.png"],
+      "date": "2023.06.26",
+      "musics": [
+        {
+          "id": "tsukiwomiteita",
+          "jptitle": "月を見ていた",
+          "entitle": "Tsuki Wo Miteita",
+          "track": 1,
+          "time": "4:13"
+        }
+      ]
+    },
+    {
+      "id": "sayonaramataitsuka",
+      "jptitle": "さよーならまたいつか！",
+      "entitle": "Sayonara, Mata Itsuka!",
+      "image": ["/image/digital/Sayonara, Mata Itsuka!.png"],
+      "date": "2024.04.08",
+      "musics": [
+        {
+          "id": "sayonaramataitsuka",
+          "jptitle": "さよーならまたいつか！",
+          "entitle": "Sayonara, Mata Itsuka!",
+          "track": 1,
+          "time": "3:22"
+        }
+      ]
+    },
+    {
+      "id": "mainichi",
+      "jptitle": "毎日",
+      "entitle": "Mainichi",
+      "image": ["/image/digital/Mainichi.png"],
+      "date": "2024.05.27",
+      "musics": [
+        {
+          "id": "mainichi",
+          "jptitle": "毎日",
+          "entitle": "Mainichi",
+          "track": 1,
+          "time": "3:03"
+        }
+      ]
+    },
+    {
+      "id": "azalea",
+      "jptitle": "Azalea",
+      "entitle": "Azalea",
+      "image": ["/image/digital/Azalea.png"],
+      "date": "2024.11.18",
+      "musics": [
+        {
+          "id": "azalea",
+          "jptitle": "Azalea",
+          "entitle": "Azalea",
+          "track": 1,
+          "time": "3:29"
+        }
+      ]
+    },
+    {
+      "id": "kickbackremix",
+      "jptitle": "KICK BACK (Remix)",
+      "entitle": "KICK BACK (Remix)",
+      "image": ["/image/digital/KICK BACK Remix.png"],
+      "date": "2025.09.05",
+      "musics": [
+        {
+          "id": "kickbackfrostchildren",
+          "jptitle": "KICK BACK (Frost Children Remix)",
+          "entitle": "KICK BACK (Frost Children Remix)",
+          "track": 1,
+          "time": "4:13"
+        },
+        {
+          "id": "kickbackhudsonmohawke",
+          "jptitle": "KICK BACK (Hudson Mohawke Remix)",
+          "entitle": "KICK BACK (Hudson Mohawke Remix)",
+          "track": 2,
+          "time": "4:39"
+        },
+        {
+          "id": "kickbacktomggg",
+          "jptitle": "KICK BACK (Tomggg Remix)",
+          "entitle": "KICK BACK (Tomggg Remix)",
+          "track": 1,
+          "time": "3:20"
+        }
+      ]
+    },
+    {
+      "id": "1991",
+      "jptitle": "1991",
+      "entitle": "1991",
+      "image": ["/image/digital/1991.png"],
+      "date": "2025.10.13",
+      "musics": [
+        {
+          "id": "1991",
+          "jptitle": "1991",
+          "entitle": "1991",
+          "track": 1,
+          "time": "3:48"
+        }
+      ]
+    }
+  ]
 }
