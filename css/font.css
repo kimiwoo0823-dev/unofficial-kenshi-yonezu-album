@@ -1,18 +1,30 @@
 @font-face {
   font-family: "cabin";
-  src: url("../font/Cabin/Cabin.ttf") format("truetype");
+  src: url("/font/Cabin/Cabin.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "S-core3";
+  src: url("/font/S-Core/SCDream3.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "S-core5";
-  src: url("../font/S-Core/SCDream5.otf") format("opentype");
+  src: url("/font/S-Core/SCDream5.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: meiryo;
-  src: url("../font/Meiryo/Meiryo.ttf") format("truetype");
+  font-family: "meiryo";
+  src: url("/font/Meiryo/Meiryo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "pretendardlight";
+  src: url("/font/Pretendard/Pretendard-Light.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }

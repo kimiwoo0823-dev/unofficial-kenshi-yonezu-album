@@ -1,0 +1,63 @@
+.main {
+  position: relative;
+  top: 150px;
+}
+.musics {
+  position: fixed;
+  height: 600px;
+}
+.scroll {
+  overflow-y: scroll;
+  height: 100%;
+}
+.mvvisual {
+  margin: 30px;
+  margin-top: 0px;
+  width: 480px;
+  height: 270px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.mvideo {
+  width: 480px;
+  height: 270px;
+  border-radius: 10px;
+  border: none;
+}
+.musicvisual {
+  margin: 30px;
+  margin-top: 0px;
+  width: 480px;
+  height: 480px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.musicvis {
+  width: 480px;
+  height: 480px;
+  border-radius: 10px;
+  border: none;
+}
+.lyrics {
+  position: relative;
+  left: 600px;
+  width: 800px;
+  min-height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  line-height: 20px;
+}
+.lyricstext {
+  font-family: "cabin", "meiryo", "S-core3", "pretendardlight";
+  text-align: center;
+  position: relative;
+}
+.jplyrics {
+  margin-top: 50px;
+}

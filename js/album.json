@@ -13,6 +13,8 @@
           "entitle": "Machi",
           "track": 1,
           "time": "5:40",
+          "mv": [""],
+          "music": ["https://www.youtube.com/embed/Zn_f98wtSLk"],
           "jplyrics": [
             "街の真ん中で 息を吸った魚が泣いた",
             "全て変わってしまった",
@@ -107,6 +109,11 @@
           "entitle": "Go Go Yuureisen",
           "track": 2,
           "time": "3:50",
+          "mv": [
+            "https://www.youtube.com/embed/2PqxOytUjz0",
+            "https://www.youtube.com/embed/qwJyInkd_l8"
+          ],
+          "music": ["https://www.youtube.com/embed/qwJyInkd_l8"],
           "jplyrics": [
             "1, 2, 3",
             "ちょっと病弱なセブンティーン",
@@ -290,7 +297,7 @@
             "머나먼 옛날의 주문이",
             "눈 깜짝할 사이에 널리 퍼지면",
             "눈 깜짝할 사이에 널리 퍼지면",
-            "",
+            " ",
             "삼천 년의 원한을 해방해라",
             "날아라 날아 모두 확성기를 들고",
             "연장선상의 문을 부수자",
