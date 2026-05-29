@@ -39,8 +39,8 @@ fetch("/js/album.json")
       .map(
         (_, lyr) => `
         <p class="lyricstext jplyrics">${music.jplyrics[lyr]}</p>
-        <p class="lyricstext">${music.jpdlyrics[lyr]}</p>
-        <p class="lyricstext">${music.krlyrics[lyr]}</p>
+        <p class="lyricstext jpdlyrics">${music.jpdlyrics[lyr]}</p>
+        <p class="lyricstext krlyrics">${music.krlyrics[lyr]}</p>
         `,
       )
       .join("");

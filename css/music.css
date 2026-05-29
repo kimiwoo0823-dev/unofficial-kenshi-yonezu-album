@@ -7,7 +7,7 @@
   height: 600px;
 }
 .scroll {
-  overflow-y: scroll;
+  overflow-y: auto;
   height: 100%;
 }
 .mvvisual {
@@ -54,7 +54,7 @@
   line-height: 20px;
 }
 .lyricstext {
-  font-family: "cabin", "meiryo", "S-core3", "pretendardlight";
+  font-family: "cabin", "meiryo", "pretendardlight";
   text-align: center;
   position: relative;
 }
