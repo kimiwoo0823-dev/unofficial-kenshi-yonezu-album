@@ -86,7 +86,17 @@
   border-radius: 50%;
   transition-duration: 0.2s;
 }
-.searchbuttonbase:hover {
+.btn {
+  position: relative;
+  border: none;
+  width: 40px;
+  height: 40px;
+  float: right;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  background-color: white;
+}
+.btn:hover {
   /*상단메뉴 텍스트 배경에 마우스 올릴 시 강조*/
   background-color: rgba(66, 143, 155, 0.1);
 }
@@ -99,4 +109,12 @@
 }
 .nowposition {
   background-color: rgba(224, 197, 214, 0.25);
+}
+.searchtext {
+  position: absolute;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  width: 380px;
+  height: 30px;
 }

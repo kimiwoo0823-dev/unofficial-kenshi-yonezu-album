@@ -1,9 +1,21 @@
+html {
+  font-family: "cabin", "meiryo", "pretendardlight";
+}
 .main {
   position: relative;
-  top: 150px;
+  margin-top: 150px;
+}
+.middle {
+  position: relative;
+  display: flex;
+  padding-bottom: 150px;
+  width: 1500px;
 }
 .musics {
-  position: fixed;
+  position: sticky;
+  display: block;
+  width: 550px;
+  top: 150px;
   height: 600px;
 }
 .scroll {
@@ -46,7 +58,7 @@
 }
 .lyrics {
   position: relative;
-  left: 600px;
+  left: 100px;
   width: 800px;
   min-height: 100px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -54,10 +66,79 @@
   line-height: 20px;
 }
 .lyricstext {
-  font-family: "cabin", "meiryo", "pretendardlight";
   text-align: center;
   position: relative;
 }
 .jplyrics {
   margin-top: 50px;
+}
+.tools {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.tools.singlemode {
+  justify-content: center;
+}
+.album,
+.single {
+  position: relative;
+  width: 500px;
+  min-height: 100px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.albumtitle,
+.singletitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 70px;
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+}
+.titleimage {
+  width: 120px;
+  margin: 0px auto;
+}
+.date {
+  position: relative;
+  margin: 10px auto;
+  text-align: center;
+}
+.albummusics {
+  margin: auto;
+  text-align: center;
+}
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+td {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 30px;
+  border-bottom: 0px;
+  border-collapse: collapse;
+  text-align: center;
+}
+tr :first-child {
+  width: 30px;
+  border-left: 0px;
+}
+tr :nth-child(2) {
+  width: 470px;
+  border-right: 0px;
+}
+html :visited {
+  color: black;
+  text-decoration-line: none;
+}
+html :link {
+  color: black;
+  text-decoration-line: none;
+}
+.bold {
+  font-weight: bold;
 }

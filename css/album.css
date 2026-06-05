@@ -1,6 +1,4 @@
 .album {
-  width: 1500px;
-  height: 2000px;
   position: relative;
   top: 150px;
 }
@@ -13,14 +11,19 @@
   position: relative;
   float: left;
 }
-.albumimage {
+.slider {
+  width: 480px;
+  height: 480px;
   position: relative;
-  width: 80%;
-  height: calc(width);
   margin: 60px;
   margin-bottom: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  overflow: hidden;
+}
+.albumimage {
+  width: 100%;
+  height: 100%;
 }
 .albumtitle {
   font-family: "cabin";
