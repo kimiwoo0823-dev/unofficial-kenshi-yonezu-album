@@ -23,7 +23,7 @@ fetch("/js/album.json")
         .map(
           (_, mvl) => `
       <div class="mvvisual">
-        <iframe src="${music.mv[mvl]}" class="mvideo" allowfullscreen>
+        <iframe src="${music.mv[mvl]}" class="mvideo" allowfullscreen loading="lazy">
         </iframe>
       </div>
         `,
@@ -34,7 +34,7 @@ fetch("/js/album.json")
       .map(
         (_, mus) => `
         <div class="musicvisual">
-            <iframe src="${music.music[mus]}" class="musicvis" allow></iframe>
+            <iframe src="${music.music[mus]}" class="musicvis" loading="lazy"></iframe>
         </div>
         `,
       )
@@ -89,17 +89,16 @@ fetch("/js/album.json")
     }
     if (currentAlbum) {
       toolalbum.innerHTML = musichtml(currentAlbum, "album");
+      const albumbackcolor = document.querySelector(".albumtitle");
+      const albumbordercolor = document.querySelector(".album");
+      albumbackcolor.style.backgroundColor = currentAlbum.backcolor;
+      albumbordercolor.style.borderColor = currentAlbum.bordercolor;
     }
     if (currentSingle) {
       toolsingle.innerHTML = musichtml(currentSingle, "single");
+      const singlebackcolor = document.querySelector(".singletitle");
+      const singlebordercolor = document.querySelector(".single");
+      singlebackcolor.style.backgroundColor = currentSingle.backcolor;
+      singlebordercolor.style.borderColor = currentSingle.bordercolor;
     }
-
-    const albumbackcolor = document.querySelector(".albumtitle");
-    const singlebackcolor = document.querySelector(".singletitle");
-    const albumbordercolor = document.querySelector(".album");
-    const singlebordercolor = document.querySelector(".single");
-    albumbackcolor.style.backgroundColor = currentAlbum.backcolor;
-    singlebackcolor.style.backgroundColor = currentSingle.backcolor;
-    albumbordercolor.style.borderColor = currentAlbum.bordercolor;
-    singlebordercolor.style.borderColor = currentSingle.bordercolor;
   });

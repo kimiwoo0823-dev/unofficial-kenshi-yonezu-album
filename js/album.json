@@ -3636,17 +3636,67 @@
       "krlyrics": []
     },
     {
-      "singleId":"plazma",
+      "singleId":"plazmabowandarrow",
       "id": "plazma",
       "jptitle": "Plazma",
       "entitle": "Plazma",
       "mv": [
+        "https://www.youtube.com/embed/PvWIy8ABEOs",
         "https://www.youtube.com/embed/dcxhZTb_6zs",
         "https://www.youtube.com/embed/fp3F6TqBsAU",
         "https://www.youtube.com/embed/2aFgfKtg3V4",
         "https://www.youtube.com/embed/Xgi4Mc-nKgY"
         ],
       "music": ["https://www.youtube.com/embed/02Ap3uMNiw8"],
+      "jplyrics": [],
+      "jpdlyrics": [],
+      "krlyrics": []
+    },
+    {
+      "singleId":"plazmabowandarrow",
+      "id": "bowandarrow",
+      "jptitle": "BOW AND ARROW",
+      "entitle": "BOW AND ARROW",
+      "mv": [
+        "https://www.youtube.com/embed/sCOZVBN0vC0",
+        "https://www.youtube.com/embed/H3SUAiwfyp0",
+        "https://www.youtube.com/embed/M-Eyhjkepy0",
+        "https://www.youtube.com/embed/xfFOdJlit6A",
+        "https://www.youtube.com/embed/9u5OG5vJVTI"
+        ],
+      "music": ["https://www.youtube.com/embed/tpnu2s-Agjg"],
+      "jplyrics": [],
+      "jpdlyrics": [],
+      "krlyrics": []
+    },
+    {
+      "singleId":"irisoutjanedoe",
+      "id": "irisout",
+      "jptitle": "IRIS OUT",
+      "entitle": "IRIS OUT",
+      "mv": [
+        "https://www.youtube.com/embed/pv8A7eubPQQ",
+        "https://www.youtube.com/embed/ux3QETpLcPs",
+        "https://www.youtube.com/embed/LmZD-TU96q4",
+        "https://www.youtube.com/embed/MJ70B_cwnPk"
+        ],
+      "music": ["https://www.youtube.com/embed/Cb0JZhdmjtg"],
+      "jplyrics": [],
+      "jpdlyrics": [],
+      "krlyrics": []
+    },
+    {
+      "singleId":"irisoutjanedoe",
+      "id": "janedoe",
+      "jptitle": "JANE DOE",
+      "entitle": "JANE DOE",
+      "mv": [
+        "https://www.youtube.com/embed/bEH0F1Ej-JQ",
+        "https://www.youtube.com/embed/qYcU41ew_BM",
+        "https://www.youtube.com/embed/E8N8CAihLT0",
+        "https://www.youtube.com/embed/sPLqsLsooJY"
+        ],
+      "music": ["https://www.youtube.com/embed/zuO2fClon98"],
       "jplyrics": [],
       "jpdlyrics": [],
       "krlyrics": []
@@ -4819,6 +4869,7 @@
       "image": ["/image/single/Plazma.png", "/image/single/BOW AND ARROW.png"],
       "number": "15th Single",
       "date": "2025.06.11",
+      "backcolor": "#121B61",
       "musics": [
         {
           "id": "plazma",
@@ -4835,14 +4886,14 @@
           "time": "2:56"
         },
         {
-          "id": "plazmaanimeopening",
+          "id": "plazma",
           "jptitle": "Plazma（アニメ・オープニングver.）",
           "entitle": "Plazma（ANIME OP ver.）",
           "track": 3,
           "time": "1:30"
         },
         {
-          "id": "bowandarrowanimeopening",
+          "id": "bowandarrow",
           "jptitle": "BOW AND ARROW（アニメ・オープニング ver.）",
           "entitle": "BOW AND ARROW（ANIME OP ver.）",
           "track": 4,
@@ -4857,6 +4908,7 @@
       "image": ["/image/single/IRIS OUT.png", "/image/single/JANE DOE.png"],
       "number": "16th Single",
       "date": "2025.09.24",
+      "backcolor": "#000000",
       "musics": [
         {
           "id": "irisout",
@@ -5005,7 +5057,7 @@
       ]
     },
     {
-      "id": "kickbackremix",
+      "id": "kickback",
       "jptitle": "KICK BACK (Remix)",
       "entitle": "KICK BACK (Remix)",
       "image": ["/image/digital/KICK BACK Remix.png"],
