@@ -102,10 +102,9 @@
 }
 .searchbutton {
   position: absolute;
-  top: 5px;
-  right: 10px;
+  top: 7.5px;
+  right: 7.5px;
   width: 25px;
-  float: right;
 }
 .nowposition {
   background-color: rgba(224, 197, 214, 0.25);
@@ -117,4 +116,10 @@
   border-radius: 25px;
   width: 380px;
   height: 30px;
+}
+.loginbutton {
+  position: relative;
+  float: left;
+  top: 20px;
+  left: 200px;
 }

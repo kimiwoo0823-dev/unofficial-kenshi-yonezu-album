@@ -10,7 +10,7 @@ fetch("/js/album.json") //파일 찾기
     data.digital.forEach((digitall) => {
       digitallist.innerHTML += `
   <a href="/music.html?id=${digitall.id}">
-    <div class="digitalbase">
+    <div class="digitalbase ${digitall.id}">
       <div class="slider">
           ${digitall.image
             .map(
@@ -20,33 +20,22 @@ fetch("/js/album.json") //파일 찾기
             )
             .join("")}
         </div>
-        <p class="digitaltitle">${digitall.jptitle}</p>
-        <p class="digitaldate">${digitall.date}</p>
-        <div class="digitaltrack">
-          <table>
-          ${digitall.musics
-            .map(
-              (music) => `
-            <tr>
-              <td>${music.jptitle}</td>
-            </tr>`,
-            )
-            .join("")}
-            </table>
-          </div>
+        <div class="digitaltitle text${digitall.id}">
+          <img src="/image/title/digital/${digitall.id}.png" class="digitaltext" alt="${digitall.id}">
+        </div>
+        <p class="digitaldate text${digitall.id}">${digitall.date}</p>
       </div>
     </a>
 `;
     });
-    document.querySelectorAll(".digitaltitle").forEach((el) => {
-      el.addEventListener("mouseenter", () => {
-        const title = el.querySelector(".titlebox");
-        title.textContent = el.dataset.en;
-      });
-
-      el.addEventListener("mouseleave", () => {
-        const title = el.querySelector(".titlebox");
-        title.textContent = el.dataset.jp;
+    data.digital.forEach((digit) => {
+      const digitalbase = document.querySelector(
+        ".digitalbase" + `.${digit.id}`,
+      );
+      const digitaltext = document.querySelectorAll(`.text${digit.id}`);
+      digitalbase.style.backgroundColor = digit.backcolor;
+      digitaltext.forEach((text) => {
+        text.style.color = digit.textcolor;
       });
     });
   });

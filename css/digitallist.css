@@ -1,3 +1,6 @@
+html {
+  font-family: "cabin", "meiryo";
+}
 .digitallist {
   position: relative;
   width: 1500px;
@@ -8,8 +11,8 @@
   position: relative;
   background-color: white;
   margin: 0px 25px 100px;
-  width: 650px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   transition-duration: 0.25s;
@@ -19,10 +22,7 @@
   position: relative;
   width: 320px;
   height: 320px;
-  top: 50%;
-  left: 200px;
-  margin: 0px;
-  transform: translate(-50%, -50%);
+  margin: 40px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   float: left;
@@ -42,29 +42,25 @@
   transform: scale(110%, 110%);
 }
 .digitaltitle {
-  color: black;
-  font-family: "cabin", "meiryo";
+  text-align: center;
+  height: 30px;
+  margin: 10px;
   font-size: 20px;
-  width: 200px;
-  top: 20px;
-  left: 100px;
   position: relative;
-  float: left;
+}
+.digitaltext {
+  max-height: 100px;
+  max-width: 320px;
 }
 .digitaldate {
-  color: black;
-  font-family: "cabin";
+  text-align: center;
+  top: 50px;
   font-size: 20px;
-  margin: 0px;
-  top: 70px;
   position: relative;
-  float: left;
 }
 .digitaltrack {
-  color: black;
   width: 200px;
   height: 250px;
-  font-family: "cabin", "meiryo";
   font-size: 20px;
   top: 120px;
   left: 420px;
