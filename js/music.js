@@ -14,7 +14,7 @@ fetch("/js/album.json")
     const toolsingle = document.querySelector(".toolsingle");
     const lyricstool = document.querySelector(".lyricstool");
 
-    title.innerHTML = `${musicId}`;
+    title.innerHTML = `${music.jptitle}`;
     console.log(music);
     console.log(currentAlbum);
     console.log(currentSingle);
