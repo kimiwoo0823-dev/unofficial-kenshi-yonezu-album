@@ -16,11 +16,15 @@ html {
   display: block;
   width: 550px;
   top: 150px;
-  height: 600px;
+  height: auto;
+  max-height: 500px;
 }
 .scroll {
+  overflow-y: hidden;
+  height: 600px;
+}
+.scroll:hover {
   overflow-y: auto;
-  height: 100%;
 }
 .mvvisual {
   margin: 30px;
@@ -56,7 +60,7 @@ html {
   border-radius: 10px;
   border: none;
 }
-.lyrics {
+.lyricsbase {
   position: relative;
   left: 100px;
   width: 800px;
@@ -65,12 +69,13 @@ html {
   border-radius: 30px;
   line-height: 20px;
 }
+.lyrics {
+  width: 700px;
+}
 .lyricstext {
+  height: 20px;
   text-align: center;
   position: relative;
-}
-.jplyrics {
-  margin-top: 50px;
 }
 .tools {
   display: flex;
@@ -116,18 +121,18 @@ table {
   margin: auto;
   border-collapse: collapse;
 }
-td {
+.tooltd {
   border: 1px solid rgba(0, 0, 0, 0.1);
   height: 30px;
   border-bottom: 0px;
   border-collapse: collapse;
   text-align: center;
 }
-tr :first-child {
+.tooltr :first-child {
   width: 30px;
   border-left: 0px;
 }
-tr :nth-child(2) {
+.tooltr :nth-child(2) {
   width: 470px;
   border-right: 0px;
 }

@@ -29,6 +29,8 @@ fetch("/js/album.json")
         `,
         )
         .join("");
+      const scroll = document.querySelector(".musics");
+      scroll.style.marginBottom = "100px";
     }
     musicplay.innerHTML = music.music
       .map(
@@ -39,21 +41,40 @@ fetch("/js/album.json")
         `,
       )
       .join("");
+
     if (music.jplyrics != "") {
       lyricstool.innerHTML = `
-      <div class="lyrics">
+      <div class="lyricsbase">
+      <table class="lyrics">
       ${music.jplyrics
         .map(
           (_, lyr) => `
-        <p class="lyricstext jplyrics">${music.jplyrics[lyr]}</p>
-        <p class="lyricstext jpdlyrics">${music.jpdlyrics[lyr]}</p>
-        <p class="lyricstext krlyrics">${music.krlyrics[lyr]}</p>
+        <tr class="lyricstext">
+          <td></td>
+        </tr>
+        <tr class="lyricstext">
+          <td colspan=${!music.jplyrics2[lyr] ? "2" : "1"}>${music.jplyrics[lyr]}</td> <!-- 2번째 가사 없으면 2칸 차지 -->
+          <td>${music.jplyrics2[lyr] ? music.jplyrics2[lyr] : ""}</td>
+        </tr>
+        <tr class="lyricstext">
+          <td colspan=${!music.jpdlyrics2[lyr] ? "2" : "1"}>${music.jpdlyrics[lyr]}</td>
+          <td>${music.jpdlyrics2[lyr] ? music.jpdlyrics2[lyr] : ""}</td>
+        </tr>
+        <tr class="lyricstext">
+          <td colspan=${!music.krlyrics2[lyr] ? "2" : "1"}>${music.krlyrics[lyr]}</td>
+          <td>${music.krlyrics2[lyr] ? music.krlyrics2[lyr] : ""}</td>
+        </tr>
+        <tr class="lyricstext">
+          <td></td>
+        </tr>
         `,
         )
         .join("")}
+        </table>
         </div>
         `;
     }
+
     function musichtml(data, type) {
       return `
       <div class="${type}">
@@ -68,14 +89,14 @@ fetch("/js/album.json")
         </div>
         <table>
           <tr>
-            <td colspan="2">${data.date}</td>
+            <td class="tooltd" colspan="2">${data.date}</td>
           </tr>
           ${data.musics
             .map(
               (mus) => `
-          <tr class="${mus.id === musicId ? "bold" : ""}">
-            <td>${mus.track}</td>
-            <td><a href="/music.html?id=${mus.id}">${mus.jptitle}</a></td>
+          <tr class="tooltr ${mus.id === musicId ? "bold" : ""}">
+            <td class="tooltd">${mus.track}</td>
+            <td class="tooltd"><a href="/music.html?id=${mus.id}">${mus.jptitle}</a></td>
           </tr>
           `,
             )
