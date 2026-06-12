@@ -36,7 +36,7 @@ fetch("/js/album.json")
       .map(
         (_, mus) => `
         <div class="musicvisual">
-            <iframe src="${music.music[mus]}" class="musicvis" loading="lazy"></iframe>
+            <iframe src="${music.music[mus]}" class="musicvis"></iframe>
         </div>
         `,
       )
