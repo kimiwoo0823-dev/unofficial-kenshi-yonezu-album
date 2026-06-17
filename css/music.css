@@ -68,6 +68,7 @@ html {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 30px;
   line-height: 20px;
+  transition-duration: 1s;
 }
 .lyrics {
   width: 700px;
@@ -120,6 +121,7 @@ html {
 table {
   margin: auto;
   border-collapse: collapse;
+  transition-duration: 1s;
 }
 .tooltd {
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -146,4 +148,40 @@ html :link {
 }
 .bold {
   font-weight: bold;
+}
+summary {
+  text-align: center;
+  cursor: pointer;
+}
+details {
+  margin: 10px;
+}
+details[open] summary ~ * {
+  animation: "open" 0.5s ease-in-out;
+}
+
+details[close] summary ~ * {
+  animation: "close" 0.5s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+    margin-top: -20px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes close {
+  0% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+  100% {
+    opacity: 0;
+    margin-top: -20px;
+  }
 }
