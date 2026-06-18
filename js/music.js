@@ -160,9 +160,9 @@ fetch("/js/album.json")
           ${data.musics
             .map(
               (mus) => `
-          <tr class="tooltr ${mus.id === musicId ? "bold" : ""}">
+          <tr class="tooltr ${mus.id === musicId ? "bold" : ""}" data-jp="${mus.jptitle}" data-en="${mus.entitle}">
             <td class="tooltd">${mus.track}</td>
-            <td class="tooltd"><a href="/music.html?id=${mus.id}">${mus.jptitle}</a></td>
+            <td class="tooltd"><a href="/music.html?id=${mus.id}" class="txt">${mus.jptitle}</a></td>
           </tr>
           `,
             )
@@ -188,4 +188,16 @@ fetch("/js/album.json")
       singlebackcolor.style.backgroundColor = currentSingle.backcolor;
       singlebordercolor.style.borderColor = currentSingle.bordercolor;
     }
+    //이름 영/일 전환
+    document.querySelectorAll(".tooltr").forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        const title = el.querySelector(".txt");
+        title.textContent = el.dataset.en;
+      });
+
+      el.addEventListener("mouseleave", () => {
+        const title = el.querySelector(".txt");
+        title.textContent = el.dataset.jp;
+      });
+    });
   });
