@@ -123,3 +123,12 @@
   top: 20px;
   left: 200px;
 }
+
+html :visited {
+  color: black;
+  text-decoration-line: none;
+}
+html :link {
+  color: black;
+  text-decoration-line: none;
+}

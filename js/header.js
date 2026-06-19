@@ -21,4 +21,12 @@ fetch("/header.html") //헤더 파일 찾기
       //주소창에 /physical/이 존재하면 상단 메뉴의 physicalmenu 클래스를 가진 부분에 nowposition(색 변환 강조) 클래스 추가
       document.querySelector(".physicalmenu").classList.add("nowposition");
     }
+    const headerbtn = document.getElementById("searchbtn");
+    headerbtn.addEventListener("click", search);
+    console.log(headerbtn);
+    function search() {
+      console.log("a");
+      const searchvalue = document.getElementById("searchtext").value;
+      location.href = `/search.html?id=${searchvalue}`;
+    }
   });

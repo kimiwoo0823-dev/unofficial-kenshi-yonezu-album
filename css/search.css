@@ -1,0 +1,45 @@
+html {
+  font-family: "cabin", "meiryo", "pretendardlight";
+}
+#searchlist {
+  position: relative;
+  top: 150px;
+}
+.searchvaluebase {
+  position: relative;
+  float: left;
+  background-color: white;
+  margin: 0px 50px 100px;
+  width: 400px;
+  height: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  transition-duration: 0.25s;
+}
+.searchvalueimage {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  float: left;
+}
+.searchvaluetitle {
+  position: relative;
+  display: flex;
+  margin: 20px;
+}
+.searchvaluedate {
+  position: relative;
+  display: flex;
+  margin: 20px;
+}
+.searchvaluetext {
+  position: relative;
+  display: flex;
+  margin: 20px;
+}
+.searchvaluebase:hover {
+  transform: scale(110%, 110%);
+}
