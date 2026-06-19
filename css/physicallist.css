@@ -1,0 +1,60 @@
+html {
+  font-family: "cabin", "meiryo";
+}
+.physicallist {
+  position: relative;
+  width: 1500px;
+  left: 50px;
+  top: 150px;
+  display: flex;
+}
+.physicalbase {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  transition-duration: 0.25s;
+  float: left;
+}
+.physicalimage {
+  float: left;
+  width: 50px;
+  transition: 0.5s;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+}
+
+.physicalbase:hover {
+  transform: scale(110%, 110%);
+  z-index: 1;
+}
+.physicaltitle {
+  text-align: center;
+  height: 30px;
+  margin: 10px;
+  font-size: 20px;
+  position: relative;
+}
+.physicaltext {
+  max-height: 100px;
+  max-width: 320px;
+}
+.physicaldate {
+  text-align: center;
+  top: 50px;
+  font-size: 20px;
+  position: relative;
+}
+.physicaltrack {
+  width: 200px;
+  height: 250px;
+  font-size: 20px;
+  top: 120px;
+  left: 420px;
+  position: absolute;
+  float: left;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+html {
+  overflow-x: hidden;
+}

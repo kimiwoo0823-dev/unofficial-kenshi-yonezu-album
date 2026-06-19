@@ -15877,7 +15877,7 @@
       "id": "karasu",
       "jptitle": "烏",
       "entitle": "Karasu - Raven",
-      "mv": [],
+      "mv": ["https://www.youtube.com/embed/YjPMupS1Lg4"],
       "music": ["https://www.youtube.com/embed/YBMVdtDeK18"],
       "jplyrics": [
         "子供のころにみていた漫画の世界はいつも",
@@ -15887,7 +15887,7 @@
         "星の名前を知るたび僕らは大人になった",
         "誰にも渡せない秘密が一つずつ増えていった",
         "願うだけ強くなる度眠るのが怖くなった",
-        "なあ　お前には何が見える？",
+        "なあ お前には何が見える？",
         "今だけは誰の声も聞こえない場所へ行こう",
         "寄せ書きもそっと机にしまって澄み渡る青い方へ",
         "僕らは今日ただ一羽の夢見がちな烏になって",
@@ -15899,12 +15899,12 @@
         "人が嫌いなあの子に気づけば子供ができた",
         "同じ夢を見てたアイツは心を壊してった",
         "さよならを言えないままあの人はいなくなった",
-        "なあ　そこからは何が見える？",
+        "なあ そこからは何が見える？",
         "子供のころにみた漫画の世界から",
         "誰かのために生きることを教わった",
         "うまく言えないけど僕が生まれたのは",
         "誰かのためじゃなかったんだ",
-        "紙吹雪を散らそう　あの空席を目掛けて",
+        "紙吹雪を散らそう あの空席を目掛けて",
         "更地になった公園でひたすら日が暮れるまで",
         "自分の幼さも知らず大口叩きまくって",
         "滴った血の黒さをまだ憶えている",
@@ -17335,6 +17335,44 @@
       "date": "2026.06.15",
       "backcolor": "#FFFFFF",
       "textcolor": "#FC3D59"
+    }
+  ],
+  "physical": [
+    {
+      "image": ["/image/physical/album/diorama/dioramaside.png"],
+      "id": "diorama"
+    },
+    {
+      "image": ["/image/physical/album/YANKEE/YANKEEside.png"],
+      "id":"yankee"
+    },
+    {
+      "image": ["/image/physical/album/YANKEE/YANKEEspecialside.png"],
+      "id":"yankeespecial"
+    },
+    {
+      "image": ["/image/physical/album/Bremen/Bremenside.png"],
+      "id":"bremen"
+    },
+    {
+      "image": ["/image/physical/album/Bremen/Bremendvdside.png"],
+      "id":"bremendvd"
+    },
+    {
+      "image": ["/image/physical/album/Bremen/Bremenspecialside.png"],
+      "id":"bremenspecial"
+    },
+    {
+      "image": ["/image/physical/album/STRAY SHEEP/straysheepside.png"],
+      "id":"straysheep"
+    },
+    {
+      "image": ["/image/physical/album/STRAY SHEEP/straysheepdvdside.png"],
+      "id":"straysheepdvd"
+    },
+    {
+      "image": ["/image/physical/album/STRAY SHEEP/straysheepspecialside.png"],
+      "id":"straysheepspecial"
     }
   ]
 }
