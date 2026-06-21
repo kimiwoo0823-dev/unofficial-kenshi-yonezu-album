@@ -1,6 +1,11 @@
 fetch("/header.html") //헤더 파일 찾기
   .then((response) => response.text()) //형식을 텍스트로 변경
   .then((data) => {
+    const base = document.querySelector(".base");
+    const homebtn = document.querySelector(".homebutton");
+    const namebase = document.querySelectorAll(".namebase");
+    const selectbarbase = document.querySelectorAll(".selectbarbase");
+    const html = document.querySelector("html");
     document.getElementById("header").innerHTML = data; //header id에 불러온 data값 추가
 
     const path = location.pathname; //위치하는 주소의 이름을 path에 저장
@@ -26,8 +31,92 @@ fetch("/header.html") //헤더 파일 찾기
     console.log(headerbtn);
 
     function search() {
-      console.log("a");
       const searchvalue = document.getElementById("searchtext").value;
       location.href = `/search.html?id=${searchvalue}`;
+    }
+
+    const darkmodebtn = document.getElementById("darkmodebtn");
+    darkmodebtn.addEventListener("click", darkmode);
+
+    function darkmode() {
+      const base = document.querySelector(".base");
+      const homebtn = document.querySelector(".homebutton");
+      const namebase = document.querySelectorAll(".namebase");
+      const html = document.querySelector("html");
+      if (localStorage.getItem("darkmode") == "true") {
+        localStorage.setItem("darkmode", "false");
+      } else {
+        localStorage.setItem("darkmode", "true");
+      }
+      if (localStorage.getItem("darkmode") == "true") {
+        html.style.backgroundColor = "rgb(12, 12, 51)";
+        base.style.backgroundColor = "rgba(85, 58, 86, 0.7)";
+        homebtn.addEventListener("mouseenter", () => {
+          homebtn.style.backgroundColor = "rgba(221, 219, 134, 0.35)";
+        });
+        homebtn.addEventListener("mouseleave", () => {
+          homebtn.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        });
+        namebase.addEventListener("mouseenter", () => {
+          namebase.style.backgroundColor = "rgba(221, 219, 134, 0.35)";
+        });
+        namebase.addEventListener("mouseleave", () => {
+          namebase.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        });
+      } else {
+        html.style.backgroundColor = "rgb(255, 255, 255))";
+        base.style.backgroundColor = "rgba(226, 217, 174, 0.7)";
+        homebtn.addEventListener("mouseenter", () => {
+          homebtn.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+        });
+        homebtn.addEventListener("mouseleave", () => {
+          homebtn.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        });
+        namebase.forEach((a) => {
+          a.addEventListener("mouseenter", () => {
+            a.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+          });
+          a.addEventListener("mouseleave", () => {
+            a.style.backgroundColor = "rgba(0, 0, 0, 0)";
+          });
+        });
+      }
+    }
+
+    if (localStorage.getItem("darkmode") == "true") {
+      html.style.backgroundColor = "rgb(12, 12, 51)";
+      base.style.backgroundColor = "rgba(85, 58, 86, 0.7)";
+      homebtn.addEventListener("mouseenter", () => {
+        homebtn.style.backgroundColor = "rgba(221, 219, 134, 0.35)";
+      });
+      homebtn.addEventListener("mouseleave", () => {
+        homebtn.style.backgroundColor = "rgba(0, 0, 0, 0)";
+      });
+      namebase.addEventListener("mouseenter", () => {
+        namebase.style.backgroundColor = "rgba(221, 219, 134, 0.35)";
+      });
+      namebase.addEventListener("mouseleave", () => {
+        namebase.style.backgroundColor = "rgba(0, 0, 0, 0)";
+      });
+      selectbarbase.forEach((a) => {
+        a.style.backgroundColor = "rgb(33, 56, 98)";
+      });
+    } else {
+      html.style.backgroundColor = "rgb(255, 255, 255))";
+      base.style.backgroundColor = "rgba(226, 217, 174, 0.7)";
+      homebtn.addEventListener("mouseenter", () => {
+        homebtn.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+      });
+      homebtn.addEventListener("mouseleave", () => {
+        homebtn.style.backgroundColor = "rgba(0, 0, 0, 0)";
+      });
+      namebase.forEach((a) => {
+        a.addEventListener("mouseenter", () => {
+          a.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+        });
+        a.addEventListener("mouseleave", () => {
+          a.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        });
+      });
     }
   });

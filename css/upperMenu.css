@@ -1,3 +1,6 @@
+html {
+  background-color: white;
+}
 .base {
   /*상단메뉴 기본 배경*/
   width: 100%;
@@ -24,10 +27,6 @@
   transition-duration: 0.2s;
   transition-timing-function: linear;
 }
-.homebutton:hover {
-  /*상단메뉴 홈버튼 마우스 올렸을 때*/
-  background-color: rgba(66, 143, 155, 0.1);
-}
 .namebase {
   /*상단메뉴 텍스트 배경*/
   position: relative;
@@ -50,10 +49,6 @@
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.1);
   background-color: transparent;
-}
-.namebase:hover {
-  /*상단메뉴 텍스트 배경에 마우스 올릴 시 강조*/
-  background-color: rgba(66, 143, 155, 0.1);
 }
 .textbase {
   /*상단메뉴 텍스트 기본값*/
@@ -118,6 +113,12 @@
   height: 30px;
 }
 .loginbutton {
+  position: relative;
+  float: left;
+  top: 20px;
+  left: 175px;
+}
+.darkmodebutton {
   position: relative;
   float: left;
   top: 20px;

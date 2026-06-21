@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", () => {
       if (window.YT && YT.Player) {
         createPlayer();
       }
+
+      playlistprint();
     });
 });
 
