@@ -40,6 +40,14 @@ html {
   display: flex;
   margin: 20px;
 }
-.searchvaluebase:hover {
-  transform: scale(110%, 110%);
+.button {
+  width: 100px;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  transition-duration: 0.25s;
+}
+.button:hover {
+  transform: scale(125%, 125%);
 }

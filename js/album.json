@@ -17343,6 +17343,10 @@
       "id": "diorama"
     },
     {
+      "image": ["/image/physical/album/diorama/dioramaside.png"],
+      "id": "dioramadvd"
+    },
+    {
       "image": ["/image/physical/album/YANKEE/YANKEEside.png"],
       "id":"yankee"
     },
@@ -17373,6 +17377,18 @@
     {
       "image": ["/image/physical/album/STRAY SHEEP/straysheepspecialside.png"],
       "id":"straysheepspecial"
+    },
+    {
+      "image": ["/image/physical/album/LOST CORNER/lostcorner.png"],
+      "id":"lostcorner"
+    },
+    {
+      "image": ["/image/physical/album/LOST CORNER/lostcornerdvdside.png"],
+      "id":"lostcornerdvd"
+    },
+    {
+      "image": ["/image/physical/album/LOST CORNER/lostcornerspecialside.png"],
+      "id":"lostcornerspecial"
     }
   ]
 }

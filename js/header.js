@@ -24,6 +24,7 @@ fetch("/header.html") //헤더 파일 찾기
     const headerbtn = document.getElementById("searchbtn");
     headerbtn.addEventListener("click", search);
     console.log(headerbtn);
+
     function search() {
       console.log("a");
       const searchvalue = document.getElementById("searchtext").value;
