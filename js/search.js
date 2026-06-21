@@ -13,7 +13,8 @@ fetch("/js/album.json")
         <a href="/music.html?id=${data.id}">
           <button class="button">상세정보</button>
         </a>
-        <button class="button playlist" id="${data.id}">재생목록에 추가</button>
+        <button class="button playlistadd" id="${data.id}">재생목록에 추가</button>
+        <button class="button playlistdelete" id="${data.id}">재생목록에서 제거</button>
       </div>
         `;
     }
@@ -140,19 +141,35 @@ fetch("/js/album.json")
       }
     });
 
-    const playlistbtn = document.querySelectorAll(".playlist");
+    const playlistaddbtn = document.querySelectorAll(".playlistadd");
+    const playlistdelbtn = document.querySelectorAll(".playlistdelete");
 
-    playlistbtn.forEach((btn) => {
-      btn.addEventListener("click", playlist);
+    playlistaddbtn.forEach((btn) => {
+      btn.addEventListener("click", playlistadd);
     });
 
-    function playlist(musicname) {
+    playlistdelbtn.forEach((btn) => {
+      btn.addEventListener("click", playlistdelete);
+    });
+
+    function playlistadd(musicname) {
       const musicId = musicname.currentTarget.id;
 
       let playlist = JSON.parse(localStorage.getItem("playlist")) || [];
 
       if (!playlist.includes(musicId)) {
         playlist.push(musicId);
+        localStorage.setItem("playlist", JSON.stringify(playlist));
+      }
+    }
+
+    function playlistdelete(musicname) {
+      const musicId = musicname.currentTarget.id;
+
+      let playlist = JSON.parse(localStorage.getItem("playlist")) || [];
+
+      if (playlist.includes(musicId)) {
+        playlist.pop(musicId);
         localStorage.setItem("playlist", JSON.stringify(playlist));
       }
     }

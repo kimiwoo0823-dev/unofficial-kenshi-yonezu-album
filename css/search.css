@@ -41,8 +41,8 @@ html {
   margin: 20px;
 }
 .button {
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 25px;
   margin-bottom: 10px;
   background-color: white;
   border: 1px rgba(0, 0, 0, 0.1) solid;
