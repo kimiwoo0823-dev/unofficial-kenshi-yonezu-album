@@ -26,30 +26,17 @@ html {
   transform: scale(110%, 110%);
   z-index: 1;
 }
-.physicaltitle {
-  text-align: center;
-  height: 30px;
-  margin: 10px;
-  font-size: 20px;
+.checklist {
+  width: 500px;
+  min-height: 500px;
   position: relative;
+  float: right;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  border-radius: 30px;
+  margin: 50px;
 }
-.physicaltext {
-  max-height: 100px;
-  max-width: 320px;
-}
-.physicaldate {
-  text-align: center;
-  top: 50px;
-  font-size: 20px;
-  position: relative;
-}
-.physicaltrack {
-  width: 200px;
-  height: 250px;
-  font-size: 20px;
-  top: 120px;
-  left: 420px;
-  position: absolute;
+.checkbase {
+  margin: 30px;
   float: left;
 }
 html::-webkit-scrollbar {

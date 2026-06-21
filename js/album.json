@@ -17347,12 +17347,60 @@
       "id": "dioramadvd"
     },
     {
+      "image": ["/image/physical/single/Santa Maria/SantaMariaside.png"],
+      "id": "santamaria"
+    },
+    {
+      "image": ["/image/physical/single/Santa Maria/SantaMariaside.png"],
+      "id": "santamariadvd"
+    },
+    {
+      "image": ["/image/physical/single/Santa Maria/SantaMariaspecialside.png"],
+      "id": "santamariaspecial"
+    },
+    {
+      "image": ["/image/physical/single/MAD HEAD LOVE/MADHEADLOVEside.png"],
+      "id": "madheadlove"
+    },
+    {
+      "image": ["/image/physical/single/MAD HEAD LOVE/MADHEADLOVEside.png"],
+      "id": "madheadlovedvd"
+    },
+    {
       "image": ["/image/physical/album/YANKEE/YANKEEside.png"],
       "id":"yankee"
     },
     {
+      "image": ["/image/physical/album/YANKEE/YANKEEside.png"],
+      "id":"yankeedvd"
+    },
+    {
       "image": ["/image/physical/album/YANKEE/YANKEEspecialside.png"],
       "id":"yankeespecial"
+    },
+    {
+      "image": ["/image/physical/single/Flowerwall/Flowerwallside.png"],
+      "id":"flowerwall"
+    },
+    {
+      "image": ["/image/physical/single/Flowerwall/Flowerwallside.png"],
+      "id":"flowerwalldvd"
+    },
+    {
+      "image": ["/image/physical/single/Flowerwall/Flowerwallspecialside.png"],
+      "id":"flowerwallspecial"
+    },
+    {
+      "image": ["/image/physical/single/UNBELIEVERS/UNBELIEVERSside.png"],
+      "id":"unbelievers"
+    },
+    {
+      "image": ["/image/physical/single/UNBELIEVERS/UNBELIEVERSphotobookside.png"],
+      "id":"unbelieversphotobook"
+    },
+    {
+      "image": ["/image/physical/single/UNBELIEVERS/UNBELIEVERSspecialside.png"],
+      "id":"unbelieversspecial"
     },
     {
       "image": ["/image/physical/album/Bremen/Bremenside.png"],
@@ -17365,6 +17413,18 @@
     {
       "image": ["/image/physical/album/Bremen/Bremenspecialside.png"],
       "id":"bremenspecial"
+    },
+    {
+      "image": ["/image/physical/single/LOSER Number nine/losernumbernineside.png"],
+      "id":"losernumbernine"
+    },
+    {
+      "image": ["/image/physical/single/LOSER Number nine/LOSERside.png"],
+      "id":"loser"
+    },
+    {
+      "image": ["/image/physical/single/LOSER Number nine/NumberNineside.png"],
+      "id":"numbernine"
     },
     {
       "image": ["/image/physical/album/STRAY SHEEP/straysheepside.png"],
