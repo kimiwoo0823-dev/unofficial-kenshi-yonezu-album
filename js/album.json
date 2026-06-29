@@ -15999,6 +15999,10 @@
       "date": "2012.05.16",
       "backcolor": "#FFFFFF",
       "bordercolor": "#DDDDDD",
+      "theme": {
+        "backgroundColor": "",
+        "color": ""
+      },
       "musics": [
         {
           "id": "machi",

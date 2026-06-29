@@ -18,8 +18,8 @@ fetch("/js/album.json") //파일 찾기
             .join("")}
         </div>
       <div class="albumtitle">
-        <p class="albumnumber">${album.number}</p>
-        <p class="albumtext">${album.title}</p>
+        <p class="albumnumber text">${album.number}</p>
+        <p class="albumtext text">${album.title}</p>
       </div>
         `;
     document.querySelector(".albumnumber").textContent = album.number;

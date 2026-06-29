@@ -6,6 +6,7 @@ fetch("/header.html") //헤더 파일 찾기
     const base = document.querySelector(".base");
     const homebtn = document.querySelector(".homebutton");
     const namebase = document.querySelectorAll(".namebase");
+    const nowposition = document.querySelectorAll(".nowposition");
     const html = document.querySelector("html");
     const path = location.pathname; //위치하는 주소의 이름을 path에 저장
 
@@ -35,19 +36,19 @@ fetch("/header.html") //헤더 파일 찾기
     }
 
     const darkmodebtn = document.getElementById("darkmodebtn");
-    darkmodebtn.addEventListener("click", darkmode);
+    darkmodebtn.addEventListener("click", theme);
 
-    function darkmode() {
+    function theme() {
       const base = document.querySelector(".base");
       const homebtn = document.querySelector(".homebutton");
       const namebase = document.querySelectorAll(".namebase");
       const html = document.querySelector("html");
-      if (localStorage.getItem("darkmode") == "true") {
-        localStorage.setItem("darkmode", "false");
+      if (localStorage.getItem("theme") == "darkmode") {
+        localStorage.setItem("theme", "lightmode");
       } else {
-        localStorage.setItem("darkmode", "true");
+        localStorage.setItem("theme", "darkmode");
       }
-      if (localStorage.getItem("darkmode") == "true") {
+      if (localStorage.getItem("theme") == "darkmode") {
         html.style.backgroundColor = "rgb(12, 12, 51)";
         base.style.backgroundColor = "rgba(85, 58, 86, 0.7)";
         homebtn.addEventListener("mouseenter", () => {
@@ -62,7 +63,10 @@ fetch("/header.html") //헤더 파일 찾기
         namebase.addEventListener("mouseleave", () => {
           namebase.style.backgroundColor = "rgba(0, 0, 0, 0)";
         });
-      } else {
+        nowposition.addEventListener("mouseleave", () => {
+          nowposition.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
+        });
+      } else if (localStorage.getItem("theme") == "lightmode") {
         html.style.backgroundColor = "rgb(255, 255, 255)";
         base.style.backgroundColor = "rgba(226, 217, 174, 0.7)";
         homebtn.addEventListener("mouseenter", () => {
@@ -81,8 +85,9 @@ fetch("/header.html") //헤더 파일 찾기
         });
       }
     }
-    if (localStorage.getItem("darkmode") == "true") {
+    if (localStorage.getItem("theme") == "darkmode") {
       html.style.backgroundColor = "rgb(12, 12, 51)";
+      html.style.color = "white";
       base.style.backgroundColor = "rgba(85, 58, 86, 0.7)";
       homebtn.addEventListener("mouseenter", () => {
         homebtn.style.backgroundColor = "rgba(221, 219, 134, 0.35)";
@@ -90,14 +95,20 @@ fetch("/header.html") //헤더 파일 찾기
       homebtn.addEventListener("mouseleave", () => {
         homebtn.style.backgroundColor = "rgba(0, 0, 0, 0)";
       });
-      namebase.addEventListener("mouseenter", () => {
-        namebase.style.backgroundColor = "rgba(221, 219, 134, 0.35)";
+      namebase.forEach((a) => {
+        a.addEventListener("mouseenter", () => {
+          a.style.backgroundColor = "rgba(9, 0, 53, 0.35)";
+        });
+        a.addEventListener("mouseleave", () => {
+          a.style.backgroundColor = "rgba(0, 0, 0, 0)";
+        });
       });
-      namebase.addEventListener("mouseleave", () => {
-        namebase.style.backgroundColor = "rgba(0, 0, 0, 0)";
+      nowposition.addEventListener("mouseleave", () => {
+        nowposition.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
       });
-    } else {
+    } else if (localStorage.getItem("theme") == "lightmode") {
       html.style.backgroundColor = "rgb(255, 255, 255)";
+      html.style.color = "black";
       base.style.backgroundColor = "rgba(226, 217, 174, 0.7)";
       homebtn.addEventListener("mouseenter", () => {
         homebtn.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
@@ -112,6 +123,9 @@ fetch("/header.html") //헤더 파일 찾기
         a.addEventListener("mouseleave", () => {
           a.style.backgroundColor = "rgba(0, 0, 0, 0)";
         });
+      });
+      nowposition.addEventListener("mouseleave", () => {
+        nowposition.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
       });
     }
   });
