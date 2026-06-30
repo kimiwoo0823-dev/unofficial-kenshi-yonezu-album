@@ -28,9 +28,9 @@ fetch("/js/album.json") //파일 찾기
     album.musics.forEach((music) => {
       musictrack.innerHTML += `
     <a href="/music.html?id=${music.id}" class="music" data-jp="${music.jptitle}" data-en="${music.entitle}">
-      <p class="number">${music.track}</p>
-      <div class="titlebox title">${music.jptitle}</div>
-      <p class="time">${music.time}</p>
+      <p class="number text">${music.track}</p>
+      <div class="titlebox title text">${music.jptitle}</div>
+      <p class="time text">${music.time}</p>
     </a>
 `;
     });

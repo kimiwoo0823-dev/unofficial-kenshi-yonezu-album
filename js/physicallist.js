@@ -27,7 +27,7 @@ fetch("/js/album.json") //파일 찾기
              name="${list.id}"
              id="${list.id}"
              ${localcheck[list.id] ? "checked" : ""} />
-      <label for="${list.id}">${list.id}</label>
+      <label for="${list.id}" class="text">${list.id}</label>
     </div>
   `;
     });

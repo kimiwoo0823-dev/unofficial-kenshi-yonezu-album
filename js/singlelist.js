@@ -20,16 +20,16 @@ fetch("/js/album.json") //파일 찾기
             )
             .join("")}
         </div>
-        <p class="singletitle">${singlel.number}<br />${singlel.jptitle}</p>
-        <p class="singledate">${singlel.date}</p>
+        <p class="singletitle text">${singlel.number}<br />${singlel.jptitle}</p>
+        <p class="singledate text">${singlel.date}</p>
         <div class="singletrack">
           <table>
           ${singlel.musics
             .map(
               (music) => `
             <tr>
-              <td>${music.track}</td>
-              <td>${music.jptitle}</td>
+              <td class="text">${music.track}</td>
+              <td class="text">${music.jptitle}</td>
             </tr>`,
             )
             .join("")}

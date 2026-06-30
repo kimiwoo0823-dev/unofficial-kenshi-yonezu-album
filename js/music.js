@@ -46,7 +46,7 @@ fetch("/js/album.json")
       lyricstool.innerHTML = `
       <div class="lyricsbase">
       <details>
-      <summary>MV 가사 보기</summary>
+      <summary class="text">MV 가사 보기</summary>
       <table class="lyrics">
       ${music.mvlyrics.jplyrics
         .map(
@@ -54,15 +54,15 @@ fetch("/js/album.json")
         <tr class="lyricstext">
           <td></td>
         </tr>
-        <tr class="lyricstext">
+        <tr class="lyricstext text">
           <td colspan=${!music.mvlyrics.jplyrics2[lyr] ? "2" : "1"}>${music.mvlyrics.jplyrics[lyr]}</td> <!-- 2번째 가사 없으면 2칸 차지 -->
           <td>${music.mvlyrics.jplyrics2[lyr] ? music.mvlyrics.jplyrics2[lyr] : ""}</td>
         </tr>
-        <tr class="lyricstext">
+        <tr class="lyricstext text">
           <td colspan=${!music.mvlyrics.jpdlyrics2[lyr] ? "2" : "1"}>${music.mvlyrics.jpdlyrics[lyr]}</td>
           <td>${music.mvlyrics.jpdlyrics2[lyr] ? music.mvlyrics.jpdlyrics2[lyr] : ""}</td>
         </tr>
-        <tr class="lyricstext">
+        <tr class="lyricstext text">
           <td colspan=${!music.mvlyrics.krlyrics2[lyr] ? "2" : "1"}>${music.mvlyrics.krlyrics[lyr]}</td>
           <td>${music.mvlyrics.krlyrics2[lyr] ? music.mvlyrics.krlyrics2[lyr] : ""}</td>
         </tr>
@@ -75,7 +75,7 @@ fetch("/js/album.json")
         </table>
         </details>
       <details>
-      <summary>가사 보기</summary>
+      <summary class="text">가사 보기</summary>
       <table class="lyrics">
       ${music.jplyrics
         .map(
@@ -83,15 +83,15 @@ fetch("/js/album.json")
         <tr class="lyricstext">
           <td></td>
         </tr>
-        <tr class="lyricstext">
-          <td colspan=${!music.jplyrics2[lyr] ? "2" : "1"}>${music.jplyrics[lyr]}</td> <!-- 2번째 가사 없으면 2칸 차지 -->
+        <tr class="lyricstext text">
+          <td class="text" colspan=${!music.jplyrics2[lyr] ? "2" : "1"}>${music.jplyrics[lyr]}</td> <!-- 2번째 가사 없으면 2칸 차지 -->
           <td>${music.jplyrics2[lyr] ? music.jplyrics2[lyr] : ""}</td>
         </tr>
-        <tr class="lyricstext">
+        <tr class="lyricstext text">
           <td colspan=${!music.jpdlyrics2[lyr] ? "2" : "1"}>${music.jpdlyrics[lyr]}</td>
           <td>${music.jpdlyrics2[lyr] ? music.jpdlyrics2[lyr] : ""}</td>
         </tr>
-        <tr class="lyricstext">
+        <tr class="lyricstext text">
           <td colspan=${!music.krlyrics2[lyr] ? "2" : "1"}>${music.krlyrics[lyr]}</td>
           <td>${music.krlyrics2[lyr] ? music.krlyrics2[lyr] : ""}</td>
         </tr>
@@ -109,7 +109,7 @@ fetch("/js/album.json")
       lyricstool.innerHTML = `
       <div class="lyricsbase">
       <details>
-      <summary>가사 보기</summary>
+      <summary class="text">가사 보기</summary>
       <table class="lyrics">
       ${music.jplyrics
         .map(
@@ -117,15 +117,15 @@ fetch("/js/album.json")
         <tr class="lyricstext">
           <td></td>
         </tr>
-        <tr class="lyricstext">
+        <tr class="lyricstext text">
           <td colspan=${!music.jplyrics2[lyr] ? "2" : "1"}>${music.jplyrics[lyr]}</td> <!-- 2번째 가사 없으면 2칸 차지 -->
           <td>${music.jplyrics2[lyr] ? music.jplyrics2[lyr] : ""}</td>
         </tr>
-        <tr class="lyricstext">
+        <tr class="lyricstext text">
           <td colspan=${!music.jpdlyrics2[lyr] ? "2" : "1"}>${music.jpdlyrics[lyr]}</td>
           <td>${music.jpdlyrics2[lyr] ? music.jpdlyrics2[lyr] : ""}</td>
         </tr>
-        <tr class="lyricstext">
+        <tr class="lyricstext text">
           <td colspan=${!music.krlyrics2[lyr] ? "2" : "1"}>${music.krlyrics[lyr]}</td>
           <td>${music.krlyrics2[lyr] ? music.krlyrics2[lyr] : ""}</td>
         </tr>

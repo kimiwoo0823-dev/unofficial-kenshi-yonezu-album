@@ -27,6 +27,7 @@ html {
   z-index: 1;
 }
 .checklist {
+  background-color: rgba(255, 255, 255, 0.2);
   width: 500px;
   min-height: 500px;
   position: relative;
