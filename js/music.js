@@ -42,9 +42,12 @@ fetch("/js/album.json")
       )
       .join("");
 
-    if (music.mvlyrics) {
-      lyricstool.innerHTML = `
+    if (music.jplyrics != "") {
+      lyricstool.innerHTML += `
       <div class="lyricsbase">
+      ${
+        music.mvlyrics
+          ? `
       <details>
       <summary class="text">MV 가사 보기</summary>
       <table class="lyrics">
@@ -74,40 +77,9 @@ fetch("/js/album.json")
         .join("")}
         </table>
         </details>
-      <details>
-      <summary class="text">가사 보기</summary>
-      <table class="lyrics">
-      ${music.jplyrics
-        .map(
-          (_, lyr) => `
-        <tr class="lyricstext">
-          <td></td>
-        </tr>
-        <tr class="lyricstext text">
-          <td class="text" colspan=${!music.jplyrics2[lyr] ? "2" : "1"}>${music.jplyrics[lyr]}</td> <!-- 2번째 가사 없으면 2칸 차지 -->
-          <td>${music.jplyrics2[lyr] ? music.jplyrics2[lyr] : ""}</td>
-        </tr>
-        <tr class="lyricstext text">
-          <td colspan=${!music.jpdlyrics2[lyr] ? "2" : "1"}>${music.jpdlyrics[lyr]}</td>
-          <td>${music.jpdlyrics2[lyr] ? music.jpdlyrics2[lyr] : ""}</td>
-        </tr>
-        <tr class="lyricstext text">
-          <td colspan=${!music.krlyrics2[lyr] ? "2" : "1"}>${music.krlyrics[lyr]}</td>
-          <td>${music.krlyrics2[lyr] ? music.krlyrics2[lyr] : ""}</td>
-        </tr>
-        <tr class="lyricstext">
-          <td></td>
-        </tr>
-        `,
-        )
-        .join("")}
-        </table>
-        </details>
-        </div>
-        `;
-    } else if (music.jplyrics != "") {
-      lyricstool.innerHTML = `
-      <div class="lyricsbase">
+        `
+          : ""
+      }
       <details>
       <summary class="text">가사 보기</summary>
       <table class="lyrics">
@@ -155,14 +127,14 @@ fetch("/js/album.json")
         </div>
         <table>
           <tr>
-            <td class="tooltd" colspan="2">${data.date}</td>
+            <td class="tooltd text" colspan="2">${data.date}</td>
           </tr>
           ${data.musics
             .map(
               (mus) => `
           <tr class="tooltr ${mus.id === musicId ? "bold" : ""}" data-jp="${mus.jptitle}" data-en="${mus.entitle}">
-            <td class="tooltd">${mus.track}</td>
-            <td class="tooltd"><a href="/music.html?id=${mus.id}" class="txt">${mus.jptitle}</a></td>
+            <td class="tooltd text">${mus.track}</td>
+            <td class="tooltd text"><a href="/music.html?id=${mus.id}" class="txt text">${mus.jptitle}</a></td>
           </tr>
           `,
             )
