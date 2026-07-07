@@ -27,6 +27,7 @@ html {
   overflow-y: auto;
 }
 .mvvisual {
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 30px;
   margin-top: 0px;
   width: 480px;
@@ -44,6 +45,7 @@ html {
   border: none;
 }
 .musicvisual {
+  background-color: rgba(255, 255, 255, 0.2);
   margin: 30px;
   margin-top: 0px;
   width: 480px;

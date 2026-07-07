@@ -21,6 +21,7 @@ fetch("/js/album.json") //파일 찾기
         <p class="albumnumber text">${album.number}</p>
         <p class="albumtext text">${album.title}</p>
       </div>
+      <button class="themebutton">테마로 설정</button>
         `;
     document.querySelector(".albumnumber").textContent = album.number;
     document.querySelector(".albumtext").textContent = album.title;

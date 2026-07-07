@@ -17454,5 +17454,13 @@
       "image": ["/image/physical/album/LOST CORNER/lostcornerspecialside.png"],
       "id":"lostcornerspecial"
     }
+  ],
+  "theme": [
+    {
+      "id": "diorama",
+      "backgroundColor": "white",
+      "color": "black",
+      "backgroundImage": "image/background/diorama/background.png"
+    }
   ]
 }
