@@ -22,12 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
         //주소창에 /physical/이 존재하면 상단 메뉴의 physicalmenu 클래스를 가진 부분에 nowposition(색 변환 강조) 클래스 추가
         document.querySelector(".physicalmenu").classList.add("nowposition");
       }
-      const base = document.querySelector(".base");
-      const homebtn = document.querySelector(".homebutton");
-      const namebase = document.querySelectorAll(".namebase");
-      const nowposition = document.querySelectorAll(".nowposition");
-      const text = document.querySelectorAll(".text");
-      const html = document.querySelector("html");
 
       const headerbtn = document.getElementById("searchbtn");
       headerbtn.addEventListener("click", search);
@@ -41,12 +35,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const darkmodebtn = document.getElementById("darkmodebtn");
       darkmodebtn.addEventListener("click", theme);
 
-      function theme() {
-        const base = document.querySelector(".base");
-        const homebtn = document.querySelector(".homebutton");
-        const namebase = document.querySelectorAll(".namebase");
-        const html = document.querySelector("html");
+      const base = document.querySelector(".base");
+      const homebtn = document.querySelector(".homebutton");
+      const namebase = document.querySelectorAll(".namebase");
+      const nowposition = document.querySelectorAll(".nowposition");
+      const text = document.querySelectorAll(".text");
+      const html = document.querySelector("html");
 
+      function theme() {
         if (localStorage.getItem("theme") == "darkmode") {
           localStorage.setItem("theme", "lightmode");
         } else {
@@ -54,6 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (localStorage.getItem("theme") == "darkmode") {
+          html.style.backgroundImage = "none";
           html.style.backgroundColor = "rgb(12, 12, 51)";
           base.style.backgroundColor = "rgba(85, 58, 86, 0.7)";
           homebtn.addEventListener("mouseenter", () => {
@@ -79,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
             a.style.color = "white";
           });
         } else if (localStorage.getItem("theme") == "lightmode") {
+          html.style.backgroundImage = "none";
           html.style.backgroundColor = "rgb(255, 255, 255)";
           base.style.backgroundColor = "rgba(226, 217, 174, 0.7)";
           homebtn.addEventListener("mouseenter", () => {
@@ -107,6 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       if (localStorage.getItem("theme") == "darkmode") {
+        html.style.backgroundImage = "none";
         html.style.backgroundColor = "rgb(12, 12, 51)";
         text.forEach((a) => {
           a.style.color = "white";
@@ -132,6 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         });
       } else if (localStorage.getItem("theme") == "lightmode") {
+        html.style.backgroundImage = "none";
         html.style.backgroundColor = "rgb(255, 255, 255)";
         text.forEach((a) => {
           a.style.color = "black";
@@ -157,31 +157,36 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         });
       } else {
-        const theme = localStorage(getItem("theme"));
-        html.style.backgroundImage = theme.backgroundImage;
-        text.forEach((a) => {
-          a.style.color = theme.color;
-        });
-        base.style.backgroundColor = theme.backgroundColor;
-        homebtn.addEventListener("mouseenter", () => {
-          homebtn.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
-        });
-        homebtn.addEventListener("mouseleave", () => {
-          homebtn.style.backgroundColor = "rgba(0, 0, 0, 0)";
-        });
-        namebase.forEach((a) => {
-          a.addEventListener("mouseenter", () => {
-            a.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+        const theme = localStorage.getItem("theme");
+        fetch("/js/album.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const currenttheme = data.theme.find((thms) => thms.id === theme);
+            html.style.backgroundImage = `url(${currenttheme.backgroundImage})`;
+            text.forEach((a) => {
+              a.style.color = currenttheme.color;
+            });
+            base.style.backgroundColor = currenttheme.backgroundColor;
+            homebtn.addEventListener("mouseenter", () => {
+              homebtn.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+            });
+            homebtn.addEventListener("mouseleave", () => {
+              homebtn.style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+            namebase.forEach((a) => {
+              a.addEventListener("mouseenter", () => {
+                a.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+              });
+              a.addEventListener("mouseleave", () => {
+                a.style.backgroundColor = "rgba(0, 0, 0, 0)";
+              });
+            });
+            nowposition.forEach((a) => {
+              a.addEventListener("mouseleave", () => {
+                a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
+              });
+            });
           });
-          a.addEventListener("mouseleave", () => {
-            a.style.backgroundColor = "rgba(0, 0, 0, 0)";
-          });
-        });
-        nowposition.forEach((a) => {
-          a.addEventListener("mouseleave", () => {
-            a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
-          });
-        });
       }
     });
 });

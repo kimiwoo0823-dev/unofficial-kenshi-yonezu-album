@@ -26,6 +26,52 @@ fetch("/js/album.json") //파일 찾기
     document.querySelector(".albumnumber").textContent = album.number;
     document.querySelector(".albumtext").textContent = album.title;
 
+    const themebutton = document.querySelector(".themebutton");
+    themebutton.addEventListener("click", theme);
+
+    function theme() {
+      const base = document.querySelector(".base");
+      const homebtn = document.querySelector(".homebutton");
+      const namebase = document.querySelectorAll(".namebase");
+      const nowposition = document.querySelectorAll(".nowposition");
+      const text = document.querySelectorAll(".text");
+      const html = document.querySelector("html");
+
+      localStorage.setItem("theme", albumId);
+
+      const theme = localStorage.getItem("theme");
+      fetch("/js/album.json")
+        .then((response) => response.json())
+        .then((data) => {
+          const currenttheme = data.theme.find((thms) => thms.id === theme);
+          html.style.backgroundImage = `url(${currenttheme.backgroundImage})`;
+          console.log(html.style.backgroundImage);
+          text.forEach((a) => {
+            a.style.color = currenttheme.color;
+          });
+          base.style.backgroundColor = currenttheme.backgroundColor;
+          homebtn.addEventListener("mouseenter", () => {
+            homebtn.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+          });
+          homebtn.addEventListener("mouseleave", () => {
+            homebtn.style.backgroundColor = "rgba(0, 0, 0, 0)";
+          });
+          namebase.forEach((a) => {
+            a.addEventListener("mouseenter", () => {
+              a.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+            });
+            a.addEventListener("mouseleave", () => {
+              a.style.backgroundColor = "rgba(0, 0, 0, 0)";
+            });
+          });
+          nowposition.forEach((a) => {
+            a.addEventListener("mouseleave", () => {
+              a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
+            });
+          });
+        });
+    }
+
     album.musics.forEach((music) => {
       musictrack.innerHTML += `
     <a href="/music.html?id=${music.id}" class="music" data-jp="${music.jptitle}" data-en="${music.entitle}">

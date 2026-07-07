@@ -17458,9 +17458,9 @@
   "theme": [
     {
       "id": "diorama",
-      "backgroundColor": "white",
+      "backgroundColor": "rgba(200, 200, 200, 0.5)",
       "color": "black",
-      "backgroundImage": "image/background/diorama/background.png"
+      "backgroundImage": "/image/background/diorama/background.png"
     }
   ]
 }
