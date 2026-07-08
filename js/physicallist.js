@@ -22,7 +22,7 @@ fetch("../js/album.json") //파일 찾기
     //     });
     data.physical.forEach((list) => {
       checklist.innerHTML += `
-    <div class="checkbase">
+    <div class="base">
       <input type="checkbox"
              name="${list.id}"
              id="${list.id}"

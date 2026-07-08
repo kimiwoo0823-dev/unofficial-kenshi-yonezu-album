@@ -17465,6 +17465,14 @@
       "backgroundImage": "image/background/diorama/background.png",
       "buttonhover": "rgba(255, 255, 255, 0.1)",
       "nowposition": "rgba(175, 175, 175, 0.2)"
+    },
+    {
+      "id": "yankee",
+      "backgroundColor": "rgba(230, 72, 61, 0.5)",
+      "color": "rgba(225, 195, 145, 1)",
+      "backgroundImage": "image/background/YANKEE/background.png",
+      "buttonhover": "rgba(160, 35, 29, 0.1)",
+      "nowposition": "rgba(208, 189, 172, 0.2)"
     }
   ]
 }

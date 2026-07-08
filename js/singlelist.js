@@ -10,7 +10,7 @@ fetch("../js/album.json") //파일 찾기
     data.single.forEach((singlel) => {
       singlelist.innerHTML += `
   <a href="/single/single.html?id=${singlel.id}">
-    <div class="singlebase">
+    <div class="base">
       <div class="slider">
           ${singlel.image
             .map(

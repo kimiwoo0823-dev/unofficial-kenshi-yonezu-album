@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
       darkmodebtn.addEventListener("click", theme);
 
       const headerbase = document.querySelector(".headerbase");
+      const base = document.querySelectorAll(".base");
       const homebtn = document.querySelector(".homebutton");
       const namebase = document.querySelectorAll(".namebase");
       const nowposition = document.querySelectorAll(".nowposition");
@@ -163,6 +164,7 @@ document.addEventListener("DOMContentLoaded", () => {
               a.style.color = currenttheme.color;
             });
             headerbase.style.backgroundColor = currenttheme.backgroundColor;
+            base.style.backgroundColor = currenttheme.backgroundColor;
             homebtn.addEventListener("mouseenter", () => {
               homebtn.style.backgroundColor = currenttheme.buttonhover;
             });

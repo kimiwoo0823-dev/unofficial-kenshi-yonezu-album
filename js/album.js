@@ -31,6 +31,7 @@ fetch("../js/album.json") //파일 찾기
 
     function theme() {
       const headerbase = document.querySelector(".headerbase");
+      const base = document.querySelectorAll(".base");
       const homebtn = document.querySelector(".homebutton");
       const namebase = document.querySelectorAll(".namebase");
       const nowposition = document.querySelectorAll(".nowposition");
@@ -44,12 +45,12 @@ fetch("../js/album.json") //파일 찾기
         .then((response) => response.json())
         .then((data) => {
           const currenttheme = data.theme.find((thms) => thms.id === theme);
-          html.style.backgroundImage = `url(${pathkeyword.map((keywords) => path.includes(keywords)) ? "../" : ""}${currenttheme.backgroundImage})`;
-          console.log(html.style.backgroundImage);
+          html.style.backgroundImage = `url(../${currenttheme.backgroundImage})`;
           text.forEach((a) => {
             a.style.color = currenttheme.color;
           });
           headerbase.style.backgroundColor = currenttheme.backgroundColor;
+          base.style.backgroundColor = currenttheme.backgroundColor;
           homebtn.addEventListener("mouseenter", () => {
             homebtn.style.backgroundColor = currenttheme.buttonhover;
           });

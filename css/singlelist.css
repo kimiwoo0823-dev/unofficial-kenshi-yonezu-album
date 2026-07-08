@@ -9,7 +9,7 @@
   left: 50px;
   top: 150px;
 }
-.singlebase {
+.base {
   position: relative;
   background-color: rgba(255, 255, 255, 0.2);
   margin: 0px 25px 100px;
@@ -43,7 +43,7 @@
 .singleimage.active {
   opacity: 1;
 }
-.singlebase:hover {
+.base:hover {
   transform: scale(110%, 110%);
 }
 .singletitle {

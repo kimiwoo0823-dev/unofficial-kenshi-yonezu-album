@@ -10,7 +10,7 @@ fetch("../js/album.json") //파일 찾기
     data.album.forEach((albuml) => {
       albumlist.innerHTML += `
   <a href="/album/album.html?id=${albuml.id}">
-    <div class="albumbase">
+    <div class="base">
       <div class="slider">
           ${albuml.image
             .map(
