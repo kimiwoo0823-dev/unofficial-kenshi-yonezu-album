@@ -15535,6 +15535,7 @@
         "이마 코노 요데 키미다케 다이세이카이",
         "",
         "",
+        "",
         ""
      ],
      "jpdlyrics2": [],
@@ -15583,6 +15584,7 @@
         "(빵)",
         "동공이 활짝 열려서 빠져 죽을 것 같아",
         "지금 이 세상에서 너만이 완전 정답",
+        "",
         "",
         "",
         ""
@@ -15993,8 +15995,8 @@
     {
       "id": "diorama",
       "title": "diorama",
-      "titleimage": "/image/title/album/diorama.png",
-      "image": ["/image/album/diorama.png"],
+      "titleimage": "../image/title/album/diorama.png",
+      "image": ["../image/album/diorama.png"],
       "number": "1st Album",
       "date": "2012.05.16",
       "backcolor": "#FFFFFF",
@@ -16108,8 +16110,8 @@
     {
       "id": "yankee",
       "title": "YANKEE",
-      "titleimage": "/image/title/album/YANKEE.png",
-      "image": ["/image/album/YANKEE.png", "/image/album/YANKEEspecial.png"],
+      "titleimage": "../image/title/album/YANKEE.png",
+      "image": ["../image/album/YANKEE.png", "../image/album/YANKEEspecial.png"],
       "number": "2nd Album",
       "date": "2014.04.23",
       "backcolor": "#CD2F27",
@@ -16226,8 +16228,8 @@
     {
       "id": "bremen",
       "title": "Bremen",
-      "titleimage": "/image/title/album/Bremen.png",
-      "image": ["/image/album/Bremen.png"],
+      "titleimage": "../image/title/album/Bremen.png",
+      "image": ["../image/album/Bremen.png"],
       "number": "3rd Album",
       "date": "2015.10.07",
       "backcolor": "#36524D",
@@ -16336,8 +16338,8 @@
     {
       "id": "bootleg",
       "title": "BOOTLEG",
-      "titleimage": "/image/title/album/BOOTLEG.png",
-      "image": ["/image/album/BOOTLEG.png"],
+      "titleimage": "../image/title/album/BOOTLEG.png",
+      "image": ["../image/album/BOOTLEG.png"],
       "number": "4th Album",
       "date": "2017.11.01",
       "backcolor": "#000000",
@@ -16446,8 +16448,8 @@
     {
       "id": "straysheep",
       "title": "STRAY SHEEP",
-      "titleimage": "/image/title/album/STRAY SHEEP.png",
-      "image": ["/image/album/STRAY SHEEP.png"],
+      "titleimage": "../image/title/album/STRAY SHEEP.png",
+      "image": ["../image/album/STRAY SHEEP.png"],
       "number": "5th Album",
       "date": "2020.08.05",
       "backcolor":"#428192",
@@ -16563,8 +16565,8 @@
     {
       "id": "lostcorner",
       "title": "LOST CORNER",
-      "titleimage": "/image/title/album/LOST CORNER.png",
-      "image": ["/image/album/LOST CORNER.png"],
+      "titleimage": "image/title/album/LOST CORNER.png",
+      "image": ["../image/album/LOST CORNER.png"],
       "number": "6th Album",
       "date": "2024.08.21",
       "backcolor": "#FCEEE5",
@@ -16718,7 +16720,7 @@
       "id": "santamaria",
       "jptitle": "サンタマリア",
       "entitle": "Santa Maria",
-      "image": ["/image/single/Santa Maria.png"],
+      "image": ["../image/single/Santa Maria.png"],
       "number": "1st Single",
       "date": "2013.05.29",
       "musics": [
@@ -16752,8 +16754,8 @@
       "jptitle": "MAD HEAD LOVE",
       "entitle": "MAD HEAD LOVE",
       "image": [
-        "/image/single/MAD HEAD LOVE.png",
-        "/image/single/Poppin'Apathy.png"
+        "../image/single/MAD HEAD LOVE.png",
+        "../image/single/Poppin'Apathy.png"
       ],
       "number": "2nd Single",
       "date": "2013.10.23",
@@ -16786,7 +16788,7 @@
       "id": "flowerwall",
       "jptitle": "Flowerwall",
       "entitle": "Flowerwall",
-      "image": ["/image/single/Flowerwall.png"],
+      "image": ["../image/single/Flowerwall.png"],
       "number": "3rd Single",
       "date": "2015.01.14",
       "musics": [
@@ -16819,8 +16821,8 @@
       "jptitle": "アンビリーバーズ",
       "entitle": "Unbelievers",
       "image": [
-        "/image/single/UNBELIEVERS.png",
-        "/image/single/UNBELIEVERSspecial.png"
+        "../image/single/UNBELIEVERS.png",
+        "../image/single/UNBELIEVERSspecial.png"
       ],
       "number": "4th Single",
       "date": "2015.09.02",
@@ -16854,7 +16856,7 @@
       "id": "losernumbernine",
       "jptitle": "LOSER / ナンバーナイン",
       "entitle": "LOSER / Number Nine",
-      "image": ["/image/single/LOSER.png"],
+      "image": ["../image/single/LOSER.png"],
       "number": "5th Single",
       "date": "2016.09.28",
       "musics": [
@@ -16886,7 +16888,7 @@
       "id": "orion",
       "jptitle": "orion",
       "entitle": "orion",
-      "image": ["/image/single/orion.png", "/image/single/orionspecial.png"],
+      "image": ["../image/single/orion.png", "../image/single/orionspecial.png"],
       "number": "6th Single",
       "date": "2017.02.15",
       "backcolor": "#EDBFDD",
@@ -16920,9 +16922,9 @@
       "jptitle": "ピースサイン",
       "entitle": "Peace Sign",
       "image": [
-        "/image/single/PEACESIGN.png",
-        "/image/single/PEACESIGNspecial.png",
-        "/image/single/PEACESIGNspecial2.png"
+        "../image/single/PEACESIGN.png",
+        "../image/single/PEACESIGNspecial.png",
+        "../image/single/PEACESIGNspecial2.png"
       ],
       "number": "7th Single",
       "date": "2017.06.21",
@@ -16963,7 +16965,7 @@
       "id": "lemon",
       "jptitle": "Lemon",
       "entitle": "Lemon",
-      "image": ["/image/single/Lemon.png"],
+      "image": ["../image/single/Lemon.png"],
       "number": "8th Single",
       "date": "2018.03.14",
       "backcolor":"#BCDEE0",
@@ -16996,7 +16998,7 @@
       "id": "flamingoteenageriot",
       "jptitle": "Flamingo / TEENAGE RIOT",
       "entitle": "Flamingo / TEENAGE RIOT",
-      "image": ["/image/single/Flamingo.png", "/image/single/TEENAGE RIOT.png"],
+      "image": ["../image/single/Flamingo.png", "../image/single/TEENAGE RIOT.png"],
       "number": "9th Single",
       "date": "2018.10.31",
       "musics": [
@@ -17028,7 +17030,7 @@
       "id": "umatoshika",
       "jptitle": "馬と鹿",
       "entitle": "Uma to Shika",
-      "image": ["/image/single/Uma to Shika.png"],
+      "image": ["../image/single/Uma to Shika.png"],
       "number": "10th Single",
       "date": "2019.09.11",
       "backcolor": "#A4A3A1",
@@ -17061,7 +17063,7 @@
       "id": "paleblue",
       "jptitle": "Pale Blue",
       "entitle": "Pale Blue",
-      "image": ["/image/single/Pale Blue.png"],
+      "image": ["../image/single/Pale Blue.png"],
       "number": "11th Single",
       "date": "2021.06.16",
       "musics": [
@@ -17093,7 +17095,7 @@
       "id": "m87",
       "jptitle": "M八七",
       "entitle": "M87",
-      "image": ["/image/single/M87.png"],
+      "image": ["../image/single/M87.png"],
       "number": "12th Single",
       "date": "2022.05.18",
       "backcolor":"#1A2F61",
@@ -17126,7 +17128,7 @@
       "id": "kickback",
       "jptitle": "KICK BACK",
       "entitle": "KICK BACK",
-      "image": ["/image/single/KICK BACK.png"],
+      "image": ["../image/single/KICK BACK.png"],
       "number": "13th Single",
       "date": "2022.11.23",
       "backcolor":"#F81F0E",
@@ -17159,7 +17161,7 @@
       "id": "chikyugi",
       "jptitle": "地球儀",
       "entitle": "Chikyugi",
-      "image": ["/image/single/Chikyugi.png"],
+      "image": ["../image/single/Chikyugi.png"],
       "number": "14th Single",
       "date": "2023.07.26",
       "musics": [
@@ -17177,7 +17179,7 @@
       "id": "plazmabowandarrow",
       "jptitle": "Plazma / BOW AND ARROW",
       "entitle": "Plazma / BOW AND ARROW",
-      "image": ["/image/single/Plazma.png", "/image/single/BOW AND ARROW.png"],
+      "image": ["../image/single/Plazma.png", "../image/single/BOW AND ARROW.png"],
       "number": "15th Single",
       "date": "2025.06.11",
       "backcolor": "#121B61",
@@ -17217,7 +17219,7 @@
       "id": "irisoutjanedoe",
       "jptitle": "IRIS OUT / JANE DOE",
       "entitle": "IRIS OUT / JANE DOE",
-      "image": ["/image/single/IRIS OUT.png", "/image/single/JANE DOE.png"],
+      "image": ["../image/single/IRIS OUT.png", "../image/single/JANE DOE.png"],
       "number": "16th Single",
       "date": "2025.09.24",
       "backcolor": "#000000",
@@ -17245,7 +17247,7 @@
       "id": "spiritsofthesea",
       "jptitle": "海の幽霊",
       "entitle": "Spirits of The Sea",
-      "image": ["/image/digital/Spirits of the Sea.png"],
+      "image": ["../image/digital/Spirits of the Sea.png"],
       "date": "2019.06.03",
       "backcolor": "#022E61",
       "textcolor": "#FFFFFF"
@@ -17254,7 +17256,7 @@
       "id": "paprika",
       "jptitle": "パプリカ",
       "entitle": "Paprika",
-      "image": ["/image/digital/PAPRIKA.png"],
+      "image": ["../image/digital/PAPRIKA.png"],
       "date": "2020.02.03",
       "backcolor": "#4DC3C2",
       "textcolor": "#ED1D24"
@@ -17263,7 +17265,7 @@
       "id": "popsong",
       "jptitle": "POP SONG",
       "entitle": "POP SONG",
-      "image": ["/image/digital/POP SONG.png"],
+      "image": ["../image/digital/POP SONG.png"],
       "date": "2022.02.07",
       "backcolor": "#E3B702",
       "textcolor": "#000000"
@@ -17272,7 +17274,7 @@
       "id": "lady",
       "jptitle": "LADY",
       "entitle": "LADY",
-      "image": ["/image/digital/LADY.png"],
+      "image": ["../image/digital/LADY.png"],
       "date": "2023.03.21",
       "backcolor": "#1F4D8B",
       "textcolor": "#EEF6FD"
@@ -17281,7 +17283,7 @@
       "id": "tsukiwomiteita",
       "jptitle": "月を見ていた",
       "entitle": "Tsuki Wo Miteita - Moongazing",
-      "image": ["/image/digital/Tsuki Wo Miteita.png"],
+      "image": ["../image/digital/Tsuki Wo Miteita.png"],
       "date": "2023.06.26",
       "backcolor": "#000000",
       "textcolor": "#FFFFFF"
@@ -17290,7 +17292,7 @@
       "id": "sayonaramataitsuka",
       "jptitle": "さよーならまたいつか！",
       "entitle": "Sayonara, Mata Itsuka! - Sayonara",
-      "image": ["/image/digital/Sayonara, Mata Itsuka!.png"],
+      "image": ["../image/digital/Sayonara, Mata Itsuka!.png"],
       "date": "2024.04.08",
       "backcolor": "#FFFFFF",
       "textcolor": "#16443E"
@@ -17299,7 +17301,7 @@
       "id": "mainichi",
       "jptitle": "毎日",
       "entitle": "Mainichi - Every Day",
-      "image": ["/image/digital/Mainichi.png"],
+      "image": ["../image/digital/Mainichi.png"],
       "date": "2024.05.27",
       "backcolor": "#FF4202",
       "textcolor": "#D8FC3A"
@@ -17308,7 +17310,7 @@
       "id": "azalea",
       "jptitle": "Azalea",
       "entitle": "Azalea",
-      "image": ["/image/digital/Azalea.png"],
+      "image": ["../image/digital/Azalea.png"],
       "date": "2024.11.18",
       "backcolor": "#FDFDF1",
       "textcolor": "#8B89E5"
@@ -17317,7 +17319,7 @@
       "id": "kickback",
       "jptitle": "KICK BACK (Remix)",
       "entitle": "KICK BACK (Remix)",
-      "image": ["/image/digital/KICK BACK Remix.png"],
+      "image": ["../image/digital/KICK BACK Remix.png"],
       "date": "2025.09.05",
       "backcolor": "#FF2015",
       "textcolor": "#6BF8A7"
@@ -17326,7 +17328,7 @@
       "id": "nineteenninetyone",
       "jptitle": "1991",
       "entitle": "1991",
-      "image": ["/image/digital/1991.png"],
+      "image": ["../image/digital/1991.png"],
       "date": "2025.10.13",
       "backcolor": "#078CA1",
       "textcolor": "#FFFFFF"
@@ -17335,7 +17337,7 @@
       "id": "karasu",
       "jptitle": "烏",
       "entitle": "Karasu",
-      "image": ["/image/digital/karasu.png"],
+      "image": ["../image/digital/karasu.png"],
       "date": "2026.06.15",
       "backcolor": "#FFFFFF",
       "textcolor": "#FC3D59"
@@ -17343,115 +17345,115 @@
   ],
   "physical": [
     {
-      "image": ["/image/physical/album/diorama/dioramaside.png"],
+      "image": ["../image/physical/album/diorama/dioramaside.png"],
       "id": "diorama"
     },
     {
-      "image": ["/image/physical/album/diorama/dioramaside.png"],
+      "image": ["../image/physical/album/diorama/dioramaside.png"],
       "id": "dioramadvd"
     },
     {
-      "image": ["/image/physical/single/Santa Maria/SantaMariaside.png"],
+      "image": ["../image/physical/single/Santa Maria/SantaMariaside.png"],
       "id": "santamaria"
     },
     {
-      "image": ["/image/physical/single/Santa Maria/SantaMariaside.png"],
+      "image": ["../image/physical/single/Santa Maria/SantaMariaside.png"],
       "id": "santamariadvd"
     },
     {
-      "image": ["/image/physical/single/Santa Maria/SantaMariaspecialside.png"],
+      "image": ["../image/physical/single/Santa Maria/SantaMariaspecialside.png"],
       "id": "santamariaspecial"
     },
     {
-      "image": ["/image/physical/single/MAD HEAD LOVE/MADHEADLOVEside.png"],
+      "image": ["../image/physical/single/MAD HEAD LOVE/MADHEADLOVEside.png"],
       "id": "madheadlove"
     },
     {
-      "image": ["/image/physical/single/MAD HEAD LOVE/MADHEADLOVEside.png"],
+      "image": ["../image/physical/single/MAD HEAD LOVE/MADHEADLOVEside.png"],
       "id": "madheadlovedvd"
     },
     {
-      "image": ["/image/physical/album/YANKEE/YANKEEside.png"],
+      "image": ["../image/physical/album/YANKEE/YANKEEside.png"],
       "id":"yankee"
     },
     {
-      "image": ["/image/physical/album/YANKEE/YANKEEside.png"],
+      "image": ["../image/physical/album/YANKEE/YANKEEside.png"],
       "id":"yankeedvd"
     },
     {
-      "image": ["/image/physical/album/YANKEE/YANKEEspecialside.png"],
+      "image": ["../image/physical/album/YANKEE/YANKEEspecialside.png"],
       "id":"yankeespecial"
     },
     {
-      "image": ["/image/physical/single/Flowerwall/Flowerwallside.png"],
+      "image": ["../image/physical/single/Flowerwall/Flowerwallside.png"],
       "id":"flowerwall"
     },
     {
-      "image": ["/image/physical/single/Flowerwall/Flowerwallside.png"],
+      "image": ["../image/physical/single/Flowerwall/Flowerwallside.png"],
       "id":"flowerwalldvd"
     },
     {
-      "image": ["/image/physical/single/Flowerwall/Flowerwallspecialside.png"],
+      "image": ["../image/physical/single/Flowerwall/Flowerwallspecialside.png"],
       "id":"flowerwallspecial"
     },
     {
-      "image": ["/image/physical/single/UNBELIEVERS/UNBELIEVERSside.png"],
+      "image": ["../image/physical/single/UNBELIEVERS/UNBELIEVERSside.png"],
       "id":"unbelievers"
     },
     {
-      "image": ["/image/physical/single/UNBELIEVERS/UNBELIEVERSphotobookside.png"],
+      "image": ["../image/physical/single/UNBELIEVERS/UNBELIEVERSphotobookside.png"],
       "id":"unbelieversphotobook"
     },
     {
-      "image": ["/image/physical/single/UNBELIEVERS/UNBELIEVERSspecialside.png"],
+      "image": ["../image/physical/single/UNBELIEVERS/UNBELIEVERSspecialside.png"],
       "id":"unbelieversspecial"
     },
     {
-      "image": ["/image/physical/album/Bremen/Bremenside.png"],
+      "image": ["../image/physical/album/Bremen/Bremenside.png"],
       "id":"bremen"
     },
     {
-      "image": ["/image/physical/album/Bremen/Bremendvdside.png"],
+      "image": ["../image/physical/album/Bremen/Bremendvdside.png"],
       "id":"bremendvd"
     },
     {
-      "image": ["/image/physical/album/Bremen/Bremenspecialside.png"],
+      "image": ["../image/physical/album/Bremen/Bremenspecialside.png"],
       "id":"bremenspecial"
     },
     {
-      "image": ["/image/physical/single/LOSER Number nine/losernumbernineside.png"],
+      "image": ["../image/physical/single/LOSER Number nine/losernumbernineside.png"],
       "id":"losernumbernine"
     },
     {
-      "image": ["/image/physical/single/LOSER Number nine/LOSERside.png"],
+      "image": ["../image/physical/single/LOSER Number nine/LOSERside.png"],
       "id":"loser"
     },
     {
-      "image": ["/image/physical/single/LOSER Number nine/NumberNineside.png"],
+      "image": ["../image/physical/single/LOSER Number nine/NumberNineside.png"],
       "id":"numbernine"
     },
     {
-      "image": ["/image/physical/album/STRAY SHEEP/straysheepside.png"],
+      "image": ["../image/physical/album/STRAY SHEEP/straysheepside.png"],
       "id":"straysheep"
     },
     {
-      "image": ["/image/physical/album/STRAY SHEEP/straysheepdvdside.png"],
+      "image": ["../image/physical/album/STRAY SHEEP/straysheepdvdside.png"],
       "id":"straysheepdvd"
     },
     {
-      "image": ["/image/physical/album/STRAY SHEEP/straysheepspecialside.png"],
+      "image": ["../image/physical/album/STRAY SHEEP/straysheepspecialside.png"],
       "id":"straysheepspecial"
     },
     {
-      "image": ["/image/physical/album/LOST CORNER/lostcorner.png"],
+      "image": ["../image/physical/album/LOST CORNER/lostcorner.png"],
       "id":"lostcorner"
     },
     {
-      "image": ["/image/physical/album/LOST CORNER/lostcornerdvdside.png"],
+      "image": ["../image/physical/album/LOST CORNER/lostcornerdvdside.png"],
       "id":"lostcornerdvd"
     },
     {
-      "image": ["/image/physical/album/LOST CORNER/lostcornerspecialside.png"],
+      "image": ["../image/physical/album/LOST CORNER/lostcornerspecialside.png"],
       "id":"lostcornerspecial"
     }
   ],
@@ -17460,7 +17462,9 @@
       "id": "diorama",
       "backgroundColor": "rgba(200, 200, 200, 0.5)",
       "color": "black",
-      "backgroundImage": "/image/background/diorama/background.png"
+      "backgroundImage": "image/background/diorama/background.png",
+      "buttonhover": "rgba(255, 255, 255, 0.1)",
+      "nowposition": "rgba(175, 175, 175, 0.2)"
     }
   ]
 }

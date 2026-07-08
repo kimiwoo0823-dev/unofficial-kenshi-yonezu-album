@@ -1,4 +1,4 @@
-fetch("/js/album.json") //파일 찾기
+fetch("../js/album.json") //파일 찾기
   .then((response) => response.json()) //파일 형식 변환
   .then((data) => {
     const params = new URLSearchParams(location.search); //params에 url 값을 저장
@@ -30,7 +30,7 @@ fetch("/js/album.json") //파일 찾기
     themebutton.addEventListener("click", theme);
 
     function theme() {
-      const base = document.querySelector(".base");
+      const headerbase = document.querySelector(".headerbase");
       const homebtn = document.querySelector(".homebutton");
       const namebase = document.querySelectorAll(".namebase");
       const nowposition = document.querySelectorAll(".nowposition");
@@ -44,21 +44,21 @@ fetch("/js/album.json") //파일 찾기
         .then((response) => response.json())
         .then((data) => {
           const currenttheme = data.theme.find((thms) => thms.id === theme);
-          html.style.backgroundImage = `url(${currenttheme.backgroundImage})`;
+          html.style.backgroundImage = `url(${pathkeyword.map((keywords) => path.includes(keywords)) ? "../" : ""}${currenttheme.backgroundImage})`;
           console.log(html.style.backgroundImage);
           text.forEach((a) => {
             a.style.color = currenttheme.color;
           });
-          base.style.backgroundColor = currenttheme.backgroundColor;
+          headerbase.style.backgroundColor = currenttheme.backgroundColor;
           homebtn.addEventListener("mouseenter", () => {
-            homebtn.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+            homebtn.style.backgroundColor = currenttheme.buttonhover;
           });
           homebtn.addEventListener("mouseleave", () => {
             homebtn.style.backgroundColor = "rgba(0, 0, 0, 0)";
           });
           namebase.forEach((a) => {
             a.addEventListener("mouseenter", () => {
-              a.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
+              a.style.backgroundColor = currenttheme.buttonhover;
             });
             a.addEventListener("mouseleave", () => {
               a.style.backgroundColor = "rgba(0, 0, 0, 0)";
@@ -66,7 +66,7 @@ fetch("/js/album.json") //파일 찾기
           });
           nowposition.forEach((a) => {
             a.addEventListener("mouseleave", () => {
-              a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
+              a.style.backgroundColor = currenttheme.nowposition;
             });
           });
         });

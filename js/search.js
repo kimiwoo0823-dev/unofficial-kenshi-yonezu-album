@@ -1,4 +1,4 @@
-fetch("/js/album.json")
+fetch("js/album.json")
   .then((response) => response.json()) //파일 형식 변환
   .then((data) => {
     const params = new URLSearchParams(location.search);

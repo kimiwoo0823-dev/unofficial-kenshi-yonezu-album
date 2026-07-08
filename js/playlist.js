@@ -9,7 +9,7 @@ function getYoutubeId(url) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("/js/album.json")
+  fetch("js/album.json")
     .then((response) => response.json())
     .then((data) => {
       musics = data.musics;
