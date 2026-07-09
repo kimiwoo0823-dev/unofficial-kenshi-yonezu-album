@@ -4,7 +4,7 @@
   margin: auto;
   top: 150px;
 }
-.selectbase {
+.base {
   float: left;
   width: 250px;
   height: 350px;
@@ -37,7 +37,7 @@
   position: relative;
   color: black;
 }
-.selectbase:hover {
+.base:hover {
   transform: scale(110%, 110%);
 }
 html::-webkit-scrollbar {

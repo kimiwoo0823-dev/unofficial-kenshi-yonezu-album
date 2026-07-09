@@ -17473,6 +17473,14 @@
       "backgroundImage": "image/background/YANKEE/background.png",
       "buttonhover": "rgba(160, 35, 29, 0.1)",
       "nowposition": "rgba(208, 189, 172, 0.2)"
+    },
+    {
+      "id": "bremen",
+      "backgroundColor": "rgba(67, 85, 70, 0.75)",
+      "color": "rgba(228, 175, 112, 1)",
+      "backgroundImage": "image/background/Bremen/background.png",
+      "buttonhover": "rgba(153, 175, 139, 0.1)",
+      "nowposition": "rgba(102, 100, 54, 0.2)"
     }
   ]
 }

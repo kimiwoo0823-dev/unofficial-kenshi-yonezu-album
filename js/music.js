@@ -22,7 +22,7 @@ fetch("js/album.json")
       mvis.innerHTML = music.mv
         .map(
           (_, mvl) => `
-      <div class="mvvisual">
+      <div class="base mvvisual">
         <iframe src="${music.mv[mvl]}" class="mvideo" allowfullscreen loading="lazy">
         </iframe>
       </div>
@@ -35,7 +35,7 @@ fetch("js/album.json")
     musicplay.innerHTML = music.music
       .map(
         (_, mus) => `
-        <div class="musicvisual">
+        <div class="base musicvisual">
             <iframe src="${music.music[mus]}" class="musicvis"></iframe>
         </div>
         `,
@@ -44,7 +44,7 @@ fetch("js/album.json")
 
     if (music.jplyrics != "") {
       lyricstool.innerHTML += `
-      <div class="lyricsbase">
+      <div class="base lyricsbase">
       ${
         music.mvlyrics
           ? `

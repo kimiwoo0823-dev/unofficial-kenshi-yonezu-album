@@ -77,10 +77,10 @@ function renderMusic() {
 
   if (music.jplyrics != "") {
     lyricstool.innerHTML = `
-      <div class="lyricsbase">
+      <div class="base lyricsbase">
       <details>
-      <summary>가사 보기</summary>
-      <table class="lyrics">
+      <summary class="text">가사 보기</summary>
+      <table class="lyrics text">
       ${music.jplyrics
         .map(
           (_, lyr) => `

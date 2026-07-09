@@ -50,7 +50,9 @@ fetch("../js/album.json") //파일 찾기
             a.style.color = currenttheme.color;
           });
           headerbase.style.backgroundColor = currenttheme.backgroundColor;
-          base.style.backgroundColor = currenttheme.backgroundColor;
+          base.forEach((a) => {
+            a.style.backgroundColor = currenttheme.backgroundColor;
+          });
           homebtn.addEventListener("mouseenter", () => {
             homebtn.style.backgroundColor = currenttheme.buttonhover;
           });
@@ -64,6 +66,9 @@ fetch("../js/album.json") //파일 찾기
             a.addEventListener("mouseleave", () => {
               a.style.backgroundColor = "rgba(0, 0, 0, 0)";
             });
+          });
+          nowposition.forEach((a) => {
+            a.style.backgroundColor = currenttheme.nowposition;
           });
           nowposition.forEach((a) => {
             a.addEventListener("mouseleave", () => {

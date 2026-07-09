@@ -38,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const nowposition = document.querySelectorAll(".nowposition");
       const text = document.querySelectorAll(".text");
       const html = document.querySelector("html");
+      const tooltd = document.querySelectorAll(".tooltd");
 
       function theme() {
         if (localStorage.getItem("theme") == "darkmode") {
@@ -65,6 +66,9 @@ document.addEventListener("DOMContentLoaded", () => {
             });
           });
           nowposition.forEach((a) => {
+            a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
+          });
+          nowposition.forEach((a) => {
             a.addEventListener("mouseleave", () => {
               a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
             });
@@ -89,6 +93,9 @@ document.addEventListener("DOMContentLoaded", () => {
             a.addEventListener("mouseleave", () => {
               a.style.backgroundColor = "rgba(0, 0, 0, 0)";
             });
+          });
+          nowposition.forEach((a) => {
+            a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
           });
           nowposition.forEach((a) => {
             a.addEventListener("mouseleave", () => {
@@ -123,6 +130,9 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         });
         nowposition.forEach((a) => {
+          a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
+        });
+        nowposition.forEach((a) => {
           a.addEventListener("mouseleave", () => {
             a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
           });
@@ -149,6 +159,9 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         });
         nowposition.forEach((a) => {
+          a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
+        });
+        nowposition.forEach((a) => {
           a.addEventListener("mouseleave", () => {
             a.style.backgroundColor = "rgba(224, 197, 214, 0.25)";
           });
@@ -164,7 +177,9 @@ document.addEventListener("DOMContentLoaded", () => {
               a.style.color = currenttheme.color;
             });
             headerbase.style.backgroundColor = currenttheme.backgroundColor;
-            base.style.backgroundColor = currenttheme.backgroundColor;
+            base.forEach((a) => {
+              a.style.backgroundColor = currenttheme.backgroundColor;
+            });
             homebtn.addEventListener("mouseenter", () => {
               homebtn.style.backgroundColor = currenttheme.buttonhover;
             });
@@ -180,9 +195,15 @@ document.addEventListener("DOMContentLoaded", () => {
               });
             });
             nowposition.forEach((a) => {
+              a.style.backgroundColor = currenttheme.nowposition;
+            });
+            nowposition.forEach((a) => {
               a.addEventListener("mouseleave", () => {
                 a.style.backgroundColor = currenttheme.nowposition;
               });
+            });
+            tooltd.forEach((a) => {
+              a.style.backgroundColor = currenttheme.backgroundColor;
             });
           });
       }
