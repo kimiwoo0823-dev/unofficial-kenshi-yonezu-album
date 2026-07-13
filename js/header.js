@@ -50,6 +50,12 @@ document.addEventListener("DOMContentLoaded", () => {
         if (localStorage.getItem("theme") == "darkmode") {
           html.style.backgroundImage = "none";
           html.style.backgroundColor = "rgb(12, 12, 51)";
+          text.forEach((a) => {
+            a.style.color = "white";
+          });
+          base.forEach((a) => {
+            a.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+          });
           headerbase.style.backgroundColor = "rgba(85, 58, 86, 0.7)";
           homebtn.addEventListener("mouseenter", () => {
             homebtn.style.backgroundColor = "rgba(221, 219, 134, 0.35)";
@@ -79,6 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (localStorage.getItem("theme") == "lightmode") {
           html.style.backgroundImage = "none";
           html.style.backgroundColor = "rgb(255, 255, 255)";
+          text.forEach((a) => {
+            a.style.color = "black";
+          });
+          base.forEach((a) => {
+            a.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+          });
           headerbase.style.backgroundColor = "rgba(226, 217, 174, 0.7)";
           homebtn.addEventListener("mouseenter", () => {
             homebtn.style.backgroundColor = "rgba(66, 143, 155, 0.1)";
@@ -114,6 +126,9 @@ document.addEventListener("DOMContentLoaded", () => {
         text.forEach((a) => {
           a.style.color = "white";
         });
+        base.forEach((a) => {
+          a.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
+        });
         headerbase.style.backgroundColor = "rgba(85, 58, 86, 0.7)";
         homebtn.addEventListener("mouseenter", () => {
           homebtn.style.backgroundColor = "rgba(221, 219, 134, 0.35)";
@@ -142,6 +157,9 @@ document.addEventListener("DOMContentLoaded", () => {
         html.style.backgroundColor = "rgb(255, 255, 255)";
         text.forEach((a) => {
           a.style.color = "black";
+        });
+        base.forEach((a) => {
+          a.style.backgroundColor = "rgba(255, 255, 255, 0.2)";
         });
         headerbase.style.backgroundColor = "rgba(226, 217, 174, 0.7)";
         homebtn.addEventListener("mouseenter", () => {
